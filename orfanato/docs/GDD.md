@@ -1,9 +1,9 @@
 # GAME DESIGN DOCUMENT
 ## Orfanato Nossa Senhora das Dores
 
-**Version:** 0.1 (Draft)
+**Version:** 0.2 (Mechanics Defined)
 **Last Updated:** 2024-12-07
-**Status:** Structure Definition Phase
+**Status:** Puzzle Design Phase
 
 ---
 
@@ -242,46 +242,171 @@ A hybrid physical + digital cooperative investigation game where 4-10 players in
 
 | Transition | Lock Type | Code | How Players Find It |
 |------------|-----------|------|---------------------|
-| Video → Phase 1 | TODO | TODO | Answer question in video |
-| Phase 1 → Phase 2 | TODO | TODO | TODO |
-| Phase 2 → Phase 3 | TODO | TODO | TODO |
-| Phase 3 → Phase 4 | TODO | TODO | TODO |
+| Video → Phase 1 | 4-digit combo | **0333** | Vídeo menciona "três corpos descobertos às 3:33 da manhã" - hora repetida é a resposta |
+| Phase 1 → Phase 2 | 4-digit combo | **1960** | Cross-reference: ano de fundação do orfanato aparece em múltiplos docs, destaque subtil |
+| Phase 2 → Phase 3 | 6-char alfanum (app) | **MIGUEL** | Nome aparece sussurrado por Ana, escrito em código no testemunho de Helena |
+| Phase 3 → Phase 4 | 4-digit combo | **2008** | Ano da morte de Miguel - data mais recorrente no arquivo digital |
 
 ### 3.2 Code Design Principles
-- [ ] Codes should be DEDUCED not just FOUND?
-- [ ] Or mix of both?
-- [ ] Difficulty level: TODO
+- [x] **Mix de dedução e descoberta** - alguns códigos são óbvios se prestar atenção, outros requerem conectar pontos
+- [x] **Dificuldade progressiva** - Fase 1 fácil (hora explícita), Fase 4 requer ler tudo
+- [x] **Sempre narrativamente relevantes** - códigos são datas/nomes/horas importantes para a história
+- [x] **Redundância** - cada código aparece em pelo menos 2 documentos diferentes (segurança)
 
-### 3.3 Hint System
-- [ ] TODO: How do players get hints if stuck?
-- [ ] In-app hint system?
-- [ ] Sealed hint envelopes?
-- [ ] QR codes for hints?
+### 3.3 Puzzle Types por Fase
+
+| Fase | Puzzles | Descrição |
+|------|---------|-----------|
+| **Setup** | Nenhum | Só montar board e ver vídeo |
+| **Fase 1** | Cross-reference temporal | Notar que 03:33 aparece em TODAS as autópsias |
+| **Fase 2** | Info gathering + cipher | Juntar pistas de vários testemunhos + código simples |
+| **Fase 3** | Digital exploration | Navegar arquivo, conectar mortes antigas às actuais |
+| **Fase 4** | Final deduction | Ligar objectos das cenas às crianças mortas |
+
+### 3.4 Hint System ✓ DEFINIDO
+
+**Localização:** Na app (secção "Preciso de Ajuda")
+
+**Flow:**
+```
+1. Jogador toca "Preciso de Ajuda"
+2. "Em que fase estás?" → selecciona fase
+3. "O que estás a tentar resolver?"
+   - Abrir a próxima caixa
+   - Entender um documento
+   - Ligar pistas entre si
+   - Outro
+4. Sistema mostra hints progressivos:
+
+   HINT NÍVEL 1 (Nudge) - Disponível imediatamente
+   "Já reparaste nos horários das autópsias?"
+
+   HINT NÍVEL 2 (Direcção) - Após 3 minutos
+   "Todas as três freiras morreram exactamente à mesma hora. Essa hora é importante."
+
+   HINT NÍVEL 3 (Solução) - Após mais 3 minutos
+   "O código é 0333 - a hora da morte."
+```
+
+**Princípios dos Hints:**
+- Narrativamente integrados ("O detective sénior sugere...")
+- Sem penalização (hints não afectam "pontuação")
+- Cooldown de 3 min entre níveis (evita skip imediato)
+- Hints específicos por puzzle, não genéricos
 
 ---
 
-## 4. APP DESIGN
+## 4. APP DESIGN ✓ DEFINIDO
 
-### 4.1 Core Functions
-- [ ] Video playback (intro, conclusion, possibly others)
-- [ ] Code entry (to unlock digital content)
-- [ ] Digital document viewer (Phase 3 content)
-- [ ] TODO: Background audio/ambience?
-- [ ] TODO: Timer?
-- [ ] TODO: Hint system?
-- [ ] TODO: Interactive puzzles?
+### 4.1 Papel da App
 
-### 4.2 Technical Approach
-- [ ] TODO: Web app (browser-based)?
-- [ ] TODO: Native app?
-- [ ] TODO: Existing platform (Telescape, etc.)?
-- [ ] TODO: Custom built?
+A app é o **centro de comando** que conecta todas as partes físicas:
+- Guia o jogo (vídeos, transições)
+- Valida progresso (códigos)
+- Fornece conteúdo digital (Fase 3)
+- Sistema de ajuda (hints)
+- Atmosfera (áudio ambiente opcional)
 
-### 4.3 AI Integration Ideas
-- [ ] Dynamic hint generation based on what players have seen?
-- [ ] Voice interaction with "characters"?
-- [ ] Adaptive difficulty?
-- [ ] TODO: Explore possibilities
+### 4.2 Arquitectura da App
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                     APP ORFANATO                            │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐         │
+│  │   HOME      │  │   JOGO      │  │  SETTINGS   │         │
+│  │             │  │             │  │             │         │
+│  │ • Novo Jogo │  │ • Fase      │  │ • Idioma    │         │
+│  │ • Continuar │  │   actual    │  │ • Volume    │         │
+│  │ • Regras    │  │ • Timer     │  │ • Sobre     │         │
+│  └─────────────┘  │ • Progresso │  └─────────────┘         │
+│                   └─────────────┘                           │
+│                                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  FUNCIONALIDADES POR FASE:                                  │
+│                                                             │
+│  INÍCIO                                                     │
+│  ├─ Scan QR da caixa → Inicia jogo                         │
+│  ├─ Vídeo Intro (2-3 min)                                  │
+│  └─ Input código 0333 → "Fase 1 desbloqueada!"             │
+│                                                             │
+│  FASE 1-2 (Físicas)                                        │
+│  ├─ Tracker de fase ("Estás na Fase 1")                    │
+│  ├─ Timer opcional (tempo decorrido)                       │
+│  ├─ Botão "Preciso de Ajuda" → Hints                       │
+│  └─ Input código → Confirma transição                      │
+│                                                             │
+│  FASE 3 (Digital)                                          │
+│  ├─ Input código MIGUEL → Desbloqueia Arquivo              │
+│  ├─ ARQUIVO DIGITAL:                                       │
+│  │   ├─ Diário de Miguel (scrollable, imagens)            │
+│  │   ├─ Relatório Médico - Sofia                          │
+│  │   ├─ Relatório Médico - João                           │
+│  │   ├─ Galeria de Fotos Antigas                          │
+│  │   ├─ Registos de "Acidentes"                           │
+│  │   └─ Desenhos de João (galeria)                        │
+│  ├─ Hints específicos para Fase 3                         │
+│  └─ Código 2008 encontrado → "Fase 4 desbloqueada!"       │
+│                                                             │
+│  CONCLUSÃO                                                  │
+│  ├─ Vídeo Final (1-2 min)                                  │
+│  ├─ Resumo do caso                                         │
+│  └─ Créditos / Partilhar                                   │
+│                                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  SISTEMA DE HINTS (todas as fases)                         │
+│  ├─ "Em que fase estás?"                                   │
+│  ├─ "Que puzzle?"                                          │
+│  ├─ Hint 1 → Hint 2 → Hint 3                               │
+│  └─ Cooldown 3 min entre níveis                            │
+│                                                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  EXTRAS (opcionais)                                        │
+│  ├─ Áudio ambiente (toggle on/off)                         │
+│  │   • Sons do orfanato (vento, passos, sinos)            │
+│  │   • Música de suspense subtil                          │
+│  ├─ Notas dos jogadores (scratchpad)                       │
+│  └─ QR scans para conteúdo extra (easter eggs)            │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 4.3 Technical Stack ✓ DECIDIDO
+
+**Abordagem: Progressive Web App (PWA)**
+
+| Decisão | Escolha | Razão |
+|---------|---------|-------|
+| Tipo | PWA (Web App) | Cross-platform, sem app stores, fácil update |
+| Framework | React ou Vue.js | Rápido, componentes, bom para UI |
+| Hosting | Vercel ou Netlify | Grátis, rápido, HTTPS |
+| Vídeos | YouTube unlisted ou Cloudflare Stream | Streaming sem hosting pesado |
+| Database | Supabase ou localStorage | Guardar progresso, analytics simples |
+| Offline | Service Worker | Funciona sem net após primeiro load |
+
+**URL:** `orfanato.artefactum.app` ou similar
+
+### 4.4 Conexão Físico ↔ Digital
+
+| Momento | Físico | Digital | Interacção |
+|---------|--------|---------|------------|
+| Início | Abrir caixa, ver QR | Scan QR, ver vídeo | QR inicia sessão |
+| Fase 1→2 | Abrir lock com 1960 | Confirmar na app | App celebra progresso |
+| Fase 2→3 | Inserir MIGUEL | App desbloqueia arquivo | Conteúdo digital aparece |
+| Fase 3→4 | Código 2008 | App confirma | Instrução para abrir última caixa |
+| Final | Ler evidências finais | Ver vídeo conclusão | Scan QR ou input final |
+
+### 4.5 AI Integration (Futuro)
+
+Ideias para versões futuras:
+- [ ] Hints dinâmicos baseados no tempo/progresso
+- [ ] "Telefonar" a personagens (voice AI)
+- [ ] Análise de foto das notas dos jogadores
+- [ ] Narração AI personalizada
 
 ---
 
@@ -328,22 +453,36 @@ A hybrid physical + digital cooperative investigation game where 4-10 players in
 | Scene Notes - Cistern | TODO | Not started |
 | Scene Notes - Dormitory | TODO | Not started |
 
-### 6.2 Phase 2 Documents
-| Document | Pages | Status |
-|----------|-------|--------|
-| Testimony - Mother Superior | TODO | Not started |
-| Testimony - Sr. Clara | TODO | Not started |
-| Testimony - Sr. Mariana | TODO | Not started |
-| Testimony - Sr. Helena | TODO | Not started |
-| Testimony - Lucas | TODO | Not started |
-| Testimony - Ana | TODO | Not started |
-| Testimony - Pedro | TODO | Not started |
-| Testimony - Matilde | TODO | Not started |
-| Testimony - Manuel | TODO | Not started |
-| Testimony - Rosa | TODO | Not started |
-| Testimony - Dr. António | TODO | Not started |
-| Testimony - Father Augusto | TODO | Not started |
-| Other orphan statements | TODO | Not started |
+### 6.2 Phase 2 Documents ✓ SELECÇÃO FINAL
+
+**Total: 11 testemunhos (~13 páginas)**
+
+| Prioridade | Personagem | Páginas | Função Narrativa | Status |
+|------------|------------|---------|------------------|--------|
+| ESSENCIAL | Madre Superiora Francisca | 2 | Mentirosa principal, contradições chave | Not started |
+| ESSENCIAL | Dr. António Ferreira | 1.5 | Fez autópsias, nota hora impossível, viu marcas | Not started |
+| ESSENCIAL | Lucas (17 anos) | 1 | Viu vulto às 03:30, detalhes temporais | Not started |
+| ESSENCIAL | Ana (15 anos) | 1 | "Vê" Sofia - chave para sobrenatural | Not started |
+| ESSENCIAL | Matilde (12 anos) | 0.5 | Viu Leonor "puxada para cima" - testemunha chave | Not started |
+| ESSENCIAL | Manuel (caseiro) | 1 | Tem chaves, contradição portas trancadas | Not started |
+| IMPORTANTE | Padre Augusto | 1 | Fala em metáforas bíblicas, sugere vingança divina | Not started |
+| IMPORTANTE | Irmã Helena | 1 | Sabe de Miguel+Beatriz, fala por meias palavras, código MIGUEL | Not started |
+| SECUNDÁRIO | Irmã Clara | 0.5 | Ouviu choros da "cela de reflexão" | Not started |
+| SECUNDÁRIO | Irmã Mariana | 0.5 | Sabe da comida reduzida, quase denunciou | Not started |
+| SECUNDÁRIO | Rosa (cozinheira) | 0.5 | Confirma "porções especiais" para castigados | Not started |
+| COLECTIVO | Outros órfãos (snippets) | 1 | Vários relatos curtos: sons, luzes, "freiras molhadas" | Not started |
+
+**Não incluídos (cortados):**
+- Pedro (14 anos) - info dos objectos movida para Fase 4
+- Irmã Mariana expandida - fundida com Rosa
+
+**Caligrafia diferenciada:**
+- Madre Superiora: formal, perfeita
+- Freiras: cursiva tradicional
+- Órfãos: letra irregular, erros
+- Dr. António: letra de médico (ilegível em partes)
+- Manuel: maiúsculas, simples
+- Padre: letra gótica/elaborada
 
 ### 6.3 Phase 3 Documents (Digital)
 | Document | Format | Status |
@@ -361,11 +500,108 @@ A hybrid physical + digital cooperative investigation game where 4-10 players in
 | Beatriz's testimony | TODO | Not started |
 | Final evidence | TODO | Not started |
 
-### 6.5 Video Scripts
-| Video | Duration | Status |
-|-------|----------|--------|
-| Intro Video | TODO | Not started |
-| Conclusion Video | TODO | Not started |
+### 6.5 Video Production ✓ PIPELINE DEFINIDO
+
+#### Vídeo Intro (2-3 min)
+
+**Estrutura:**
+```
+0:00-0:20  EXTERIOR ORFANATO (noite, nevoeiro, placa)
+           VO: "Orfanato Nossa Senhora das Dores. 64 anos de serviço..."
+
+0:20-0:45  INTERIOR (corredores vazios, capela, cruz)
+           VO: "Uma instituição respeitada... crianças bem cuidadas..."
+
+0:45-1:15  A DESCOBERTA (luzes de polícia, silhuetas)
+           VO: "Até esta noite. Três freiras. Três mortes. O mesmo momento."
+
+1:15-1:45  AS CENAS (rápido: capela, cisterna, dormitório - sem gore)
+           VO: "Irmã Beatriz. Irmã Teresa. Irmã Leonor. 03:33 da manhã."
+
+1:45-2:15  BRIEFING (texto na tela ou detective)
+           VO: "Vocês são a equipa de investigação. Algo está errado..."
+
+2:15-2:30  HOOK FINAL
+           VO: "A que horas morreram as três freiras?"
+           [PAUSE - espera resposta]
+           Texto: "Introduza o código para aceder aos ficheiros do caso"
+```
+
+**Estilo Visual:**
+- Imagens AI (Midjourney/DALL-E) do orfanato
+- Motion graphics para texto/transições
+- Filtro sépia/dessaturado
+- Grain de filme antigo
+
+**Áudio:**
+- VO: ElevenLabs (voz portuguesa masculina, grave)
+- Música: Piano dissonante, strings subtis
+- SFX: Vento, sinos distantes, passos, choro de criança (subtil)
+
+#### Vídeo Conclusão (1-2 min)
+
+**Estrutura:**
+```
+0:00-0:30  FLASHBACKS (as mortes das crianças - subtil, não explícito)
+           VO: "Miguel. Sofia. João. Esquecidos. Silenciados."
+
+0:30-1:00  A VINGANÇA (sombras, os três espíritos)
+           VO: "Mas os mortos não esquecem. E a justiça..."
+
+1:00-1:30  ENCERRAMENTO (orfanato abandonado? ou continuando?)
+           VO: "Caso encerrado. Causa oficial: desconhecida."
+           Texto: "Às vezes a justiça vem de onde menos esperamos."
+```
+
+**Estilo:** Mais abstracto, menos literal. Sombras, vultos, sem mostrar violência.
+
+#### Pipeline de Produção
+
+| Fase | Tarefa | Tool | Tempo Est. |
+|------|--------|------|------------|
+| 1 | Escrever scripts completos | Claude/Manual | 2h |
+| 2 | Gerar imagens base | Midjourney/DALL-E | 4h |
+| 3 | Animar imagens (ken burns, parallax) | Runway/CapCut | 3h |
+| 4 | Gerar VO | ElevenLabs | 1h |
+| 5 | Criar/seleccionar música | Suno/Epidemic Sound | 2h |
+| 6 | Edição final | DaVinci Resolve | 4h |
+| 7 | Sound design | DaVinci/Audacity | 2h |
+| **TOTAL** | | | **~18h** |
+
+#### Assets Visuais Necessários (AI Generated)
+
+**Orfanato:**
+- [ ] Exterior noite (fachada gótica, nevoeiro)
+- [ ] Exterior dia (para contraste "reputação")
+- [ ] Placa "Orfanato Nossa Senhora das Dores"
+- [ ] Portão de ferro
+- [ ] Jardim com cisterna
+
+**Interiores:**
+- [ ] Corredor escuro com portas
+- [ ] Capela (altar, bancos, cruz)
+- [ ] Dormitório (camas de ferro, janela)
+- [ ] Cozinha/Refeitório
+- [ ] "Cela de reflexão" (closet escuro)
+
+**Elementos:**
+- [ ] Silhueta de freira
+- [ ] Silhuetas de 3 crianças (vultos)
+- [ ] Luzes de polícia (vermelho/azul)
+- [ ] Cruz/crucifixo antigo
+- [ ] Boneca de pano
+- [ ] Desenho de criança (enforcamento)
+
+**Prompts Base (Midjourney):**
+```
+/imagine abandoned Portuguese orphanage exterior, night, fog,
+gothic architecture, single light in window, cinematic,
+dark atmosphere, 1960s style --ar 16:9 --v 6
+
+/imagine dark corridor inside old orphanage, doors on both sides,
+single flickering light, religious imagery, dust particles,
+horror atmosphere, photorealistic --ar 16:9 --v 6
+```
 
 ---
 
@@ -397,25 +633,31 @@ A hybrid physical + digital cooperative investigation game where 4-10 players in
 
 ## 8. OPEN QUESTIONS
 
-### Critical (Must Decide Before Proceeding)
-1. **Lock codes:** What are the actual codes and how are they discovered?
-2. **Hint system:** How do stuck players get help?
-3. **App tech:** What platform/technology?
-4. **Testimony count:** All 13+ or trimmed selection?
-5. **Video production:** How to create? AI? Filmed? Motion graphics?
+### Critical ✅ RESOLVIDAS
+1. ~~**Lock codes:** What are the actual codes and how are they discovered?~~ → **0333, 1960, MIGUEL, 2008** (Secção 3.1)
+2. ~~**Hint system:** How do stuck players get help?~~ → **App com 3 níveis progressivos** (Secção 3.4)
+3. ~~**App tech:** What platform/technology?~~ → **PWA com React, Vercel** (Secção 4.3)
+4. ~~**Testimony count:** All 13+ or trimmed selection?~~ → **11 testemunhos, ~13 páginas** (Secção 6.2)
+5. ~~**Video production:** How to create?~~ → **AI images + motion graphics + ElevenLabs VO** (Secção 6.5)
 
-### Important (Decide During Development)
-6. Timeline template: Empty or pre-structured?
-7. Difficulty calibration: How hard should puzzles be?
-8. Playtime per phase: How to balance?
-9. Physical props: Include or just documents?
-10. Conclusion video: Confirm deduction or full reveal?
+### Important (Decidir Durante Desenvolvimento)
+6. [ ] Timeline template: Vazia ou com estrutura base?
+7. [ ] Calibração de dificuldade: Playtest necessário
+8. [x] Tempo por fase: ~30min setup, ~45min F1, ~45min F2, ~30min F3, ~30min F4
+9. [ ] Props físicos: Só documentos ou incluir objectos (crucifixo, boneca)?
+10. [x] Vídeo conclusão: Confirma dedução (não revela se errado)
 
-### Nice to Have (Decide Later)
-11. AI integration possibilities
-12. Expansion content
-13. Multiple difficulty modes
-14. Digital-only version option
+### Nice to Have (Decidir Depois)
+11. [ ] AI integration: Voice AI para personagens?
+12. [ ] Expansão: Segundo caso no mesmo orfanato?
+13. [ ] Modos de dificuldade: Hints automáticos vs manual
+14. [ ] Versão digital-only: Sem componentes físicos?
+
+### NOVAS QUESTÕES (surgidas durante design)
+15. [ ] QR codes em documentos físicos para conteúdo extra?
+16. [ ] Sistema de "conquistas" na app (encontraram todas as pistas)?
+17. [ ] Multi-idioma (PT/EN) desde início?
+18. [ ] Easter eggs para replay value?
 
 ---
 
@@ -460,15 +702,27 @@ A hybrid physical + digital cooperative investigation game where 4-10 players in
 
 ## 10. REFERENCE
 
-### 10.1 Source Document
+### 10.1 Source Documents
 - [Original Concept](../conceito/CONCEITO_ORIGINAL.md)
+- [Research: Mechanics](./RESEARCH_MECHANICS.md)
 
-### 10.2 Inspiration/Research
-- TODO: Similar games to study
-- TODO: Escape room mechanics research
-- TODO: Murder mystery game formats
+### 10.2 Inspiration Games (Estudados)
+- **Exit: The Game** - Disco decoder, puzzles destrutivos
+- **Unlock!** - App integration, soma de cartas
+- **Chronicles of Crime** - QR scanning, crime scene 360°
+- **Hunt a Killer** - Autenticidade documental, caligrafia, cross-media
+- **Escape Room in a Box** - Locks físicos reais
+- **The Detective Society** - Narrativa imersiva, qualidade premium
+
+### 10.3 Key Design Principles (from research)
+1. Códigos devem ser **deduzidos**, não encontrados
+2. Documentos devem ser **autênticos** (papel, caligrafia, envelhecimento)
+3. Hints devem ser **progressivos** e **narrativos**
+4. App deve **complementar**, não substituir físico
+5. Impossibilidades lógicas levam a **dedução sobrenatural**
 
 ---
 
 *Document maintained by: Claude + Maria*
-*Next review: After TODO items resolved*
+*Version: 0.2 - Mechanics Defined*
+*Next: Phase B - Narrative Creation (escrever documentos)*
