@@ -11,145 +11,174 @@
 
 **Processo:** 2847/2024
 **Data do Relatório:** 9 de Dezembro de 2024
-**Perito:** Dr. António José Marques Ferreira
-**Instituição:** Instituto de Medicina Legal de Lisboa
+**Perito:** Dr. António Manuel Ferreira
+**Instituição:** Instituto Nacional de Medicina Legal - Gabinete de Sintra
 
 ---
 
 **NOTA INTRODUTÓRIA**
 
-Este documento constitui um sumário dos achados periciais para efeitos de investigação. Os relatórios completos de autópsia encontram-se em anexo (documentos técnicos IML-2024-7834, 7835, 7836).
+Este documento constitui um sumário dos achados periciais para efeitos de investigação. Os relatórios completos de autópsia encontram-se em anexo (Autópsias n.º 847/2024, 848/2024, 849/2024).
 
-Após 27 anos de carreira em medicina legal, sinto-me obrigado a registar que este caso apresenta características que não consigo explicar pelos métodos científicos convencionais.
+Exerço medicina legal há 23 anos. Nesse tempo, vi de tudo. Acidentes, homicídios, suicídios. Sempre consigo explicar o "como". Nem sempre o "porquê", mas sempre o "como".
+
+Desta vez não consigo.
 
 ---
 
-## VÍTIMA 1: MARIA DO CARMO TEIXEIRA ("IRMÃ CARMO")
+## VÍTIMA 1: MARIA DA CONCEIÇÃO SANTOS OLIVEIRA ("IRMÃ CONCEIÇÃO")
 
-**Idade:** 52 anos
-**Local de descoberta:** Cozinha
-**Posição:** Sentada à mesa, cabeça apoiada nos braços
+**Idade:** 68 anos
+**Local de descoberta:** Capela
+**Posição:** Decúbito ventral, a 3 metros do altar
 
-**Causa de morte:** Asfixia por inalação de fumo
+**Causa de morte:** Traumatismo crânio-encefálico grave
 
-**Hora estimada da morte:** 03:33 (± 5 minutos)
+**Hora estimada da morte:** 03:33 (± 15 minutos)
 
 **Achados relevantes:**
-- Pulmões completamente enegrecidos, consistente com exposição prolongada a fumo denso
-- Vias respiratórias obstruídas por partículas de carbono
-- Nenhum sinal de luta ou resistência
+- Três áreas distintas de impacto craniano (parietal direita, occipital esquerda, frontal)
+- Fracturas costais bilaterais (direita E esquerda)
+- Hemorragia subdural extensa
+- Expressão de terror preservada no rosto
 
 **Anomalia:**
-Não existem vestígios de fogo no local. A cozinha está intacta. Os detectores de fumo não dispararam. Não há cheiro a queimado.
+O padrão de lesões é consistente com ser projectada contra superfícies duras, múltiplas vezes, de diferentes direcções. Como se tivesse sido atirada contra as paredes.
 
-**Análise forense adicional:**
-Foi recolhida cinza debaixo das unhas da vítima. A análise por carbono-14 data o material orgânico em aproximadamente **50 anos** (margem de erro: ± 5 anos).
+Mas não há qualquer evidência de agressor. Não há marcas de mãos. Não há material subungueal. A capela estava trancada por dentro.
 
-Isto significaria cinza de circa 1973.
+Quem a atirou? Como?
 
-Não tenho explicação para este resultado. Repeti a análise. O resultado manteve-se.
+Não sei.
 
 ---
 
-## VÍTIMA 2: BEATRIZ MENDES DA SILVA ("IRMÃ BEATRIZ")
+## VÍTIMA 2: MARIA BEATRIZ DA ASSUNÇÃO FIGUEIREDO ("IRMÃ BEATRIZ")
 
-**Idade:** 58 anos
-**Local de descoberta:** Cave
-**Posição:** Ajoelhada no chão
+**Idade:** 72 anos
+**Local de descoberta:** Cozinha
+**Posição:** Sentada em cadeira, cabeça tombada
+
+**Causa de morte:** Falência multiorgânica por lesões térmicas internas
+
+**Hora estimada da morte:** 03:33 (± 15 minutos)
+
+**Achados relevantes:**
+- Carbonização extensa dos pulmões
+- Queimaduras de 3.º grau no esófago e estômago
+- Necrose coagulativa térmica no fígado
+- **Pele externa completamente intacta**
+- **Vestes sem qualquer dano**
+
+**Anomalia:**
+Esta mulher foi "cozinhada por dentro". Os órgãos internos apresentam lesões compatíveis com exposição a temperaturas superiores a 400°C.
+
+Mas a pele está intacta. O hábito que vestia está intacto. Não há fonte de calor na cozinha. O fogão estava desligado. Os detectores de fumo não dispararam.
+
+É fisicamente impossível. O calor propaga-se do exterior para o interior. Não existe mecanismo conhecido que cause queimaduras internas sem queimaduras externas.
+
+Em 23 anos, nunca vi nada semelhante. Nem encontrei nada na literatura.
+
+---
+
+## VÍTIMA 3: MARIA DO CARMO RODRIGUES OLIVEIRA ("IRMÃ CARMO")
+
+**Idade:** 65 anos
+**Local de descoberta:** Lavandaria
+**Posição:** Ajoelhada, cabeça submersa em balde de plástico
 
 **Causa de morte:** Asfixia por submersão (afogamento)
 
-**Hora estimada da morte:** 03:33 (± 5 minutos)
+**Hora estimada da morte:** 03:33 (± 15 minutos)
 
 **Achados relevantes:**
-- Pulmões completamente preenchidos por água
-- Espuma nas vias respiratórias consistente com afogamento
-- Cabelo e rosto ainda húmidos no momento da descoberta
+- Cogumelo de espuma nas narinas - afogamento confirmado
+- Água nos pulmões e estômago - vítima estava VIVA quando submersa
+- Equimoses nos ombros - marcas de mãos **de tamanho infantil**
+- Nenhuma marca de defesa nas mãos
 
 **Anomalia:**
-A cave está seca. Não existe fonte de água no local. Não houve precipitação na noite em questão. O chão debaixo do corpo estava seco.
+O balde tinha 32 cm de altura. Continha 11 cm de água.
 
-**Análise forense adicional:**
-A água extraída dos pulmões foi analisada. Contém:
-- Sedimentos minerais consistentes com água estagnada de cave
-- Micro-organismos específicos de ambientes húmidos e escuros
-- **Datação estimada da estagnação: aproximadamente 37 anos**
+Uma mulher adulta não se afoga em 11 cm de água. O reflexo de levantar a cabeça é automático. Ela podia simplesmente ter-se erguido. Podia ter derrubado o balde.
 
-Água de 1987, numa cave que está seca há décadas.
+As marcas nos ombros indicam que alguém a empurrou para baixo e a manteve submersa. Mas:
+- As marcas são de mãos de CRIANÇA
+- A lavandaria estava trancada por dentro
+- A chave estava no bolso da vítima
+- Não há crianças que pudessem estar lá
 
-Verifiquei o equipamento. Não há erro de análise.
+Quem a segurou debaixo de água?
 
----
-
-## VÍTIMA 3: MARIA DA CONCEIÇÃO OLIVEIRA ("IRMÃ CONCEIÇÃO")
-
-**Idade:** 67 anos
-**Local de descoberta:** Escritório (rés-do-chão)
-**Posição:** No chão, posição de impacto vertical
-
-**Causa de morte:** Paragem cardio-respiratória secundária a traumatismo
-
-**Hora estimada da morte:** 03:33 (± 5 minutos)
-
-**Achados relevantes:**
-- Fracturas bilaterais dos calcâneos (ossos do calcanhar)
-- Fracturas dos tálus (ossos do tornozelo)
-- Micro-fracturas nas tíbias
-- Padrão de lesões consistente com **impacto vertical de grande altura**
-
-**Estimativa de altura de queda:** Superior a 15 metros
-
-**Anomalia:**
-O escritório situa-se no rés-do-chão. O tecto está a 3 metros de altura. As janelas estavam fechadas por dentro. A porta estava trancada por dentro.
-
-Não existe ponto de queda possível que justifique estas lesões.
+Não sei.
 
 ---
 
 ## ANÁLISE TEMPORAL
 
-As três mortes ocorreram exactamente à mesma hora: **03:33** da manhã.
+As três mortes ocorreram à mesma hora: **03:33** da manhã.
 
-A margem de erro das estimativas é de ± 5 minutos. Mesmo considerando esta margem, a simultaneidade é extraordinária.
+Isto foi verificado por:
+- Relógio de pulso da Vítima 1 (parou às 03:33, presume-se por impacto)
+- Telemóvel da Vítima 2 (alarme não atendido às 03:33)
+- Telemóvel da Vítima 3 (chamada não atendida às 03:33)
 
-Para um único perpetrador matar três pessoas em três locais diferentes exactamente ao mesmo momento: **impossível**.
+A coincidência temporal é extraordinária.
 
-Para três perpetradores coordenarem ataques ao segundo: **altamente improvável** e não explica as causas de morte.
+Para um único perpetrador: impossível - três locais diferentes, simultaneamente.
+Para três perpetradores coordenados: não explica as impossibilidades físicas de cada morte.
+
+---
+
+## PADRÕES OBSERVADOS
+
+Ao analisar os três casos em conjunto, noto:
+
+1. **A mesma hora:** 03:33 - em todos os casos
+2. **Locais trancados:** Todas as portas trancadas por dentro
+3. **Ausência de terceiros:** Nenhuma evidência de presença humana
+4. **Mortes impossíveis:** Cada uma desafia explicação racional
+5. **Ausência de luta:** Nenhuma das vítimas resistiu significativamente
 
 ---
 
 ## NOTA PESSOAL
 
-*[O seguinte parágrafo foi adicionado manuscrito pelo perito]*
+*[O seguinte foi adicionado manuscrito pelo perito]*
 
-Faço este trabalho há 27 anos. Vi milhares de mortes. Sempre encontrei uma explicação.
+Não acredito em fenómenos sobrenaturais. Sou cientista. O meu trabalho é encontrar explicações racionais.
 
-Desta vez não encontro.
+Mas três mulheres morreram de formas que a ciência não explica. Ao mesmo segundo. Num orfanato isolado. Sem assassino identificável.
 
-A ciência diz-me o quê: fumo, água, queda. A ciência não me diz o como.
+A colega da Polícia Judiciária perguntou-me: "Dr. Ferreira, o que acha que aconteceu?"
 
-Cinza de 1973. Água de 1987. Queda de uma altura que não existe.
+Respondi o que penso: "Não sei. Mas alguma coisa naquele orfanato quis que estas três mulheres morressem. E conseguiu."
 
-Não acredito em fenómenos sobrenaturais. Sou cientista.
+Ela perguntou: "Alguma coisa?"
 
-Mas também não tenho outra explicação.
+Eu disse: "Não disse alguém. Disse alguma coisa."
 
-*Dr. António Ferreira*
-
----
-
-**CONCLUSÃO**
-
-As causas de morte estão determinadas. As circunstâncias permanecem por esclarecer.
-
-Recomendo investigação aprofundada da história da instituição, particularmente eventos ocorridos em:
-- 1973
-- 1987
-- 2008 (data do último "acidente" registado)
-
-Pode existir correlação.
+Deixei-a a pensar.
 
 ---
 
-*Documento classificado como: RELATÓRIO PERICIAL - FASE 1*
-*Código de verificação: ANT-002*
+**RECOMENDAÇÃO**
+
+Sugiro que a investigação se concentre no histórico da instituição. Três freiras não morrem assim sem razão.
+
+O que aconteceu naquele orfanato?
+
+O que é que elas fizeram?
+
+E a quem?
+
+---
+
+*Dr. António Manuel Ferreira*
+*Especialista em Medicina Legal*
+*INMLCF - Gabinete de Sintra*
+
+---
+
+*Documento classificado como: RELATÓRIO PERICIAL - SUMÁRIO*
+*Código de verificação: ANT-002-REV*
