@@ -1,9 +1,23 @@
 # GAME DESIGN DOCUMENT
 ## Orfanato Nossa Senhora das Dores
 
-**Version:** 0.2 (Mechanics Defined)
-**Last Updated:** 2024-12-07
-**Status:** Puzzle Design Phase
+**Version:** 0.3 (5-Act Structure)
+**Last Updated:** 2025-12-08
+**Status:** Content Creation Phase
+
+---
+
+> **IMPORTANT UPDATE (Dec 2025)**
+>
+> This GDD uses a 4-phase structure. The game has since been redesigned into a **5-act structure** for better pacing and player experience.
+>
+> **For the current game blueprint, see: [ESTRUTURA_5_ACTOS.md](./ESTRUTURA_5_ACTOS.md)**
+>
+> Key changes:
+> - Reduced from 11 to 6 essential testimonies
+> - Restructured into 5 narrative acts
+> - Minute-by-minute player experience documented
+> - Players reduced to 1-4 (from 4-10)
 
 ---
 
