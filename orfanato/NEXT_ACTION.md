@@ -5,12 +5,12 @@
 
 ---
 
-## ESTADO GLOBAL: 70% Completo
+## ESTADO GLOBAL: 75% Completo
 
 ```
 CONCEITO     ████████████████████ 95%
 NARRATIVA    █████████████████░░░ 85%
-PERSONAGENS  █████████████████░░░ 85%  <- 02_FUNCIONARIOS existe
+PERSONAGENS  ████████████████████ 100% <- COMPLETO! (22 fichas)
 ESTRUTURA    ██████████████████░░ 90%
 DOCS INGAME  ███████░░░░░░░░░░░░░ 35%
 TESTEMUNHOS  ███████████░░░░░░░░░ 55%
@@ -76,9 +76,18 @@ Os testemunhos do Acto 2 estao prontos. Falta o material de apoio:
 ## DOCUMENTACAO PENDENTE (Quando Houver Tempo)
 
 - [x] ~~Criar `02_FUNCIONARIOS.md`~~ JA EXISTE (4 fichas completas)
-- [ ] Criar `05_FANTASMAS.md` (consolidar info dos 3 fantasmas)
-- [ ] Criar `06_FREIRAS_MORTAS.md` (opcional)
+- [x] ~~Criar `05_FANTASMAS.md`~~ FEITO (3 fichas detalhadas)
+- [x] ~~Criar `06_FREIRAS_MORTAS.md`~~ FEITO (3 fichas detalhadas)
 - [ ] Actualizar documentos antigos para seguir VERSAO_CANONICA.md
+
+**PERSONAGENS 100% COMPLETOS:**
+- 01_FREIRAS_VIVAS.md (4)
+- 02_FUNCIONARIOS.md (4)
+- 03_ORFAOS_ACTUAIS.md (3)
+- 04_SOBREVIVENTES_ADULTOS.md (5)
+- 05_FANTASMAS.md (3)
+- 06_FREIRAS_MORTAS.md (3)
+- **TOTAL: 22 personagens documentados**
 
 ---
 

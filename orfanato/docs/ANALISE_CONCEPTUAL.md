@@ -238,8 +238,8 @@ TOTAL: 22 personagens
 | Funcionarios | 02_FUNCIONARIOS.md | ✅ Completo (4 fichas) |
 | Orfaos Actuais | 03_ORFAOS_ACTUAIS.md | ✅ Completo (3 fichas) |
 | Sobreviventes | 04_SOBREVIVENTES_ADULTOS.md | ✅ Completo (5 fichas) |
-| Fantasmas | Disperso em varios docs | ❓ Precisa consolidacao |
-| Freiras Mortas | Disperso em varios docs | ❓ Precisa consolidacao |
+| Fantasmas | 05_FANTASMAS.md | ✅ Completo (3 fichas) |
+| Freiras Mortas | 06_FREIRAS_MORTAS.md | ✅ Completo (3 fichas) |
 
 ---
 
@@ -408,9 +408,9 @@ Ha 4 funcionarios importantes mas nenhum tem ficha propria.
 
 | Documento | Status | Prioridade |
 |-----------|--------|------------|
-| 02_FUNCIONARIOS.md | ✅ Existe | - |
-| 05_FANTASMAS.md | ❌ Nao existe | Media |
-| 06_FREIRAS_MORTAS.md | ❌ Nao existe | Media |
+| 02_FUNCIONARIOS.md | ✅ Completo | - |
+| 05_FANTASMAS.md | ✅ Completo | - |
+| 06_FREIRAS_MORTAS.md | ✅ Completo | - |
 | Versao Canonica unica | ✅ VERSAO_CANONICA.md | - |
 
 ---
