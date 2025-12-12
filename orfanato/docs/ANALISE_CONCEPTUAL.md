@@ -235,7 +235,7 @@ TOTAL: 22 personagens
 | Categoria | Ficheiro | Status |
 |-----------|----------|--------|
 | Freiras Vivas | 01_FREIRAS_VIVAS.md | ✅ Completo (4 fichas) |
-| Funcionarios | 02_FUNCIONARIOS.md | ❌ NAO EXISTE |
+| Funcionarios | 02_FUNCIONARIOS.md | ✅ Completo (4 fichas) |
 | Orfaos Actuais | 03_ORFAOS_ACTUAIS.md | ✅ Completo (3 fichas) |
 | Sobreviventes | 04_SOBREVIVENTES_ADULTOS.md | ✅ Completo (5 fichas) |
 | Fantasmas | Disperso em varios docs | ❓ Precisa consolidacao |
@@ -357,8 +357,7 @@ Ha 4 funcionarios importantes mas nenhum tem ficha propria.
 **Solucao:** Escolher UMA versao canonica e actualizar todos os docs
 
 ## 4. Ficheiro de Funcionarios
-**Problema:** Nao existe
-**Solucao:** Criar `02_FUNCIONARIOS.md` com Manuel, Rosa, Dr. Antonio, Padre Henrique
+**Estado:** ✅ JA EXISTE - `02_FUNCIONARIOS.md` com 4 fichas completas
 
 ## 5. Testemunhos BACKGROUND Vazios
 **Problema:** Alguns ficheiros sao placeholders
@@ -409,10 +408,10 @@ Ha 4 funcionarios importantes mas nenhum tem ficha propria.
 
 | Documento | Status | Prioridade |
 |-----------|--------|------------|
-| 02_FUNCIONARIOS.md | ❌ Nao existe | Alta |
+| 02_FUNCIONARIOS.md | ✅ Existe | - |
 | 05_FANTASMAS.md | ❌ Nao existe | Media |
 | 06_FREIRAS_MORTAS.md | ❌ Nao existe | Media |
-| Versao Canonica unica | ❌ Inconsistencias | Alta |
+| Versao Canonica unica | ✅ VERSAO_CANONICA.md | - |
 
 ---
 

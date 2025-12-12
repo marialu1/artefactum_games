@@ -2,7 +2,8 @@
 
 **Categoria:** Staff do orfanato e externos
 **Total:** 4 personagens
-**Última actualização:** 8 Dezembro 2024
+**Ultima actualizacao:** 12 Dezembro 2024
+**Alinhado com:** VERSAO_CANONICA.md
 
 ---
 

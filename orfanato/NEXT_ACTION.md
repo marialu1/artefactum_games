@@ -5,12 +5,12 @@
 
 ---
 
-## ESTADO GLOBAL: 65% Completo
+## ESTADO GLOBAL: 70% Completo
 
 ```
 CONCEITO     ████████████████████ 95%
 NARRATIVA    █████████████████░░░ 85%
-PERSONAGENS  ████████████████░░░░ 80%
+PERSONAGENS  █████████████████░░░ 85%  <- 02_FUNCIONARIOS existe
 ESTRUTURA    ██████████████████░░ 90%
 DOCS INGAME  ███████░░░░░░░░░░░░░ 35%
 TESTEMUNHOS  ███████████░░░░░░░░░ 55%
@@ -27,7 +27,7 @@ TESTEMUNHOS  ███████████░░░░░░░░░ 55%
 ### Descobertas Principais
 - Existiam inconsistencias entre documentos (nomes, datas, metodos de morte)
 - Todos os 6 testemunhos essenciais JA ESTAO ESCRITOS
-- Falta ficheiro de funcionarios (02_FUNCIONARIOS.md)
+- ~~Falta ficheiro de funcionarios~~ JA EXISTE (02_FUNCIONARIOS.md)
 
 ---
 
@@ -75,8 +75,9 @@ Os testemunhos do Acto 2 estao prontos. Falta o material de apoio:
 
 ## DOCUMENTACAO PENDENTE (Quando Houver Tempo)
 
-- [ ] Criar `02_FUNCIONARIOS.md` (fichas de Manuel, Rosa, Dr. Antonio, Padre Henrique)
+- [x] ~~Criar `02_FUNCIONARIOS.md`~~ JA EXISTE (4 fichas completas)
 - [ ] Criar `05_FANTASMAS.md` (consolidar info dos 3 fantasmas)
+- [ ] Criar `06_FREIRAS_MORTAS.md` (opcional)
 - [ ] Actualizar documentos antigos para seguir VERSAO_CANONICA.md
 
 ---
