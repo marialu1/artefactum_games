@@ -168,13 +168,13 @@ Miguel quis que ela soubesse. Quis que o ultimo pensamento dela fosse: "Ele volt
 # IRMA BEATRIZ (O Braco Executor)
 
 **Dados Basicos**
-- **Nome completo:** Beatriz Maria Mendes da Silva
-- **Idade a morte:** 58 anos
+- **Nome completo:** Maria Beatriz da Assuncao Figueiredo
+- **Idade a morte:** 72 anos
 - **No orfanato desde:** 1993 (31 anos)
 - **Funcao:** Responsavel pela disciplina
 - **Data da morte:** 7 Dezembro 2024, 03:33
-- **Causa da morte:** Afogamento
-- **Morta por:** Sofia
+- **Causa da morte:** Queimaduras internas (orgaos carbonizados, pele intacta)
+- **Morta por:** Joao
 
 ---
 
@@ -281,24 +281,24 @@ Foram as ultimas palavras dele.
 ## A MORTE
 
 ### Como morreu
-Afogamento. Pulmoes completamente cheios de agua.
+Queimaduras internas. Orgaos completamente carbonizados. Pulmoes destruidos. Temperatura interna estimada: 400°C.
 
 ### Onde morreu
-Na cave. Seca ha decadas. Nenhuma fonte de agua.
+Na cozinha. Sentada numa cadeira. Fogao desligado. Sem qualquer fonte de calor.
 
 ### A impossibilidade
-Como se afoga alguem numa cave sem agua?
+Como se queimam orgaos internos sem queimar a pele?
 
-A resposta: da mesma forma que se afogou Sofia. Num balde. Com a cabeca forcada para baixo.
+As leis da fisica exigem que o calor se propague do exterior para o interior. Beatriz tinha os orgaos carbonizados mas a pele e as vestes completamente intactas. "Cozinhada por dentro."
 
 ### Os detalhes sobrenaturais
-- Balde velho encontrado ao lado do corpo
-- Marca de agua recente no balde
-- Agua nos pulmoes datada de ~1987
-- Cabelo de Beatriz molhado
-- Chao completamente seco
+- Forte cheiro a carne queimada, sem fonte de combustao
+- Orgaos internos a 400°C, pele a temperatura normal
+- Vestes impecaveis sobre carne carbonizada
+- Telemovel registou alarme as 03:33
+- Carboxihemoglobina negativa (nao inalou fumo)
 
-Sofia usou a mesma agua. A agua de 1987. A agua em que ela propria morreu.
+Joao usou o mesmo fogo. O fogo de 1973. O fogo em que ele proprio morreu. Mas desta vez, o fogo queimou de dentro para fora.
 
 ---
 
@@ -333,13 +333,13 @@ Sofia usou a mesma agua. A agua de 1987. A agua em que ela propria morreu.
 # IRMA CARMO (A Encobradora)
 
 **Dados Basicos**
-- **Nome completo:** Maria do Carmo Teixeira Lopes
-- **Idade a morte:** 52 anos
+- **Nome completo:** Maria do Carmo Rodrigues Oliveira
+- **Idade a morte:** 65 anos
 - **No orfanato desde:** 2001 (23 anos)
 - **Funcao:** Administracao / Papelada
 - **Data da morte:** 7 Dezembro 2024, 03:33
-- **Causa da morte:** Inalacao de fumo
-- **Morta por:** Joao
+- **Causa da morte:** Afogamento em balde com 11cm de agua
+- **Morta por:** Sofia
 
 ---
 
@@ -450,24 +450,25 @@ Esta lista esta no Acto 4. Prova definitiva.
 ## A MORTE
 
 ### Como morreu
-Inalacao de fumo. Pulmoes completamente negros.
+Afogamento. Pulmoes cheios de agua. Cabeca submersa num balde de plastico com apenas 11cm de agua.
 
 ### Onde morreu
-Na cozinha. Nenhum sinal de fogo. Detectores nao dispararam.
+Na lavandaria. Porta trancada por dentro. Chave no bolso da vitima.
 
 ### A impossibilidade
-Como se inala fumo sem fogo?
+Como se afoga uma mulher adulta, consciente e saudavel, num balde com 11cm de agua?
 
-A resposta: o mesmo fumo de 1973. O fumo que matou Joao.
+Um ser humano tem reflexos de sobrevivencia. Podia levantar a cabeca. Podia derrubar o balde. Podia simplesmente... levantar-se.
 
 ### Os detalhes sobrenaturais
-- Cheiro a fumo sem fonte
-- Pulmoes negros como carvao
-- Cinza debaixo das unhas
-- Analise da cinza: ~1973 (50 anos)
-- Cozinha fria, sem sinal de calor
+- Marcas de maos de CRIANCA nos ombros (8-10 anos) - forcando para baixo
+- Apenas 11cm de agua no balde - impossivel afogar-se assim
+- Nenhum sinal de luta - a vitima nao resistiu
+- Toxicologia negativa - estava consciente
+- Chamada recebida as 03:33 - sem origem identificada
+- Porta trancada por dentro - ninguem la estava
 
-Joao usou o mesmo fumo. O fumo de 1973. O fumo em que ele proprio morreu.
+Sofia usou o mesmo metodo. A mesma humilhacao. A mesma impossibilidade. Forcou Carmo a sentir o que ela sentiu aos 7 anos - a impotencia absoluta.
 
 ---
 
@@ -531,27 +532,27 @@ Porque nao o fizeram?
 
 # RESUMO: AS TRES FREIRAS MORTAS
 
-| Nome | Idade | Funcao | Morta Por | Como Morreu |
-|------|-------|--------|-----------|-------------|
-| **Conceicao** | 67 | Directora/Arquitecta | Miguel | Queda impossivel |
-| **Beatriz** | 58 | Disciplina/Executora | Sofia | Afogamento |
-| **Carmo** | 52 | Admin/Encobradora | Joao | Fumo |
+| Nome | Idade | Funcao | Morta Por | Como Morreu | Local |
+|------|-------|--------|-----------|-------------|-------|
+| **Conceicao** | 68 | Directora/Arquitecta | Miguel | Impactos multiplos | Capela |
+| **Beatriz** | 72 | Disciplina/Executora | Joao | Queimaduras internas | Cozinha |
+| **Carmo** | 65 | Admin/Encobradora | Sofia | Afogamento em balde | Lavandaria |
 
 ## Justica Poetica
 
-| Freira | Crime | Morte |
-|--------|-------|-------|
-| Conceicao | Assistiu a queda de Miguel | Caiu |
-| Beatriz | Afogou criancas (metodo) | Afogou-se |
-| Carmo | Encobriu morte de Joao | Sufocou em fumo |
+| Freira | Crime | Morte | Fantasma Vingador |
+|--------|-------|-------|-------------------|
+| Conceicao | Assistiu a queda de Miguel | Impactos como de queda | Miguel (empurrado) |
+| Beatriz | Encobriu sistema de abusos | Queimada por dentro | Joao (morreu no fogo) |
+| Carmo | Afogou Sofia ou continuou metodo | Afogada em balde | Sofia (afogada) |
 
 ## Detalhes Sobrenaturais
 
 | Freira | Detalhe Impossivel |
 |--------|-------------------|
-| Conceicao | Lesoes de queda de 15m, tecto a 3m |
-| Beatriz | Afogamento em cave seca, agua de 1987 |
-| Carmo | Inalacao de fumo sem fogo, cinza de 1973 |
+| Conceicao | Impactos de multiplas direccoes, portas trancadas, relogio parou as 03:33 |
+| Beatriz | Orgaos a 400°C, pele intacta, sem fonte de calor, "cozinhada por dentro" |
+| Carmo | Afogamento em 11cm de agua, marcas de maos de crianca nos ombros |
 
 ---
 

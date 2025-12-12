@@ -121,16 +121,16 @@ Os desenhos ainda estao na biblioteca. Helena guardou-os.
 ## A VINGANCA
 
 ### Quem matou
-**Irma Carmo** - a administradora que cobriu a morte dele nos registos
+**Irma Beatriz** - a que ignorou/encobriu a morte dele, que CONTINUOU o sistema
 
 ### Como matou
-Inalacao de fumo. Pulmoes completamente negros. Nao houve fogo visivel.
+Queimaduras internas. Orgaos carbonizados. Temperatura interna de 400°C. Pele e vestes completamente intactas. "Cozinhada por dentro."
 
-### Porque Carmo
-Carmo nao estava la em 1973 (chegou em 2001). Mas ela CONTINUOU o sistema. Ela fez os registos de "transferencias". Ela cobriu as mortes. Ela e a encarnacao de todos que o ignoraram.
+### Porque Beatriz
+Beatriz nao estava la em 1973 (chegou em 1993). Mas ela CONTINUOU o sistema. Ela e a encarnacao da crueldade institucional que ignorou Joao.
 
 ### Detalhe sobrenatural
-Cinza encontrada debaixo das unhas de Carmo. Analise forense: cinza de ~1973. Cinquenta anos.
+Telemovel de Beatriz registou alarme as 03:33. Orgaos a temperatura de 400°C sem qualquer fonte de calor. Nenhum detector de fumo disparou. Vestes impecaveis sobre carne carbonizada.
 
 ---
 
@@ -171,7 +171,7 @@ O ano da morte dele (1973) aparece nos recortes de jornal do Acto 2.
 - **Anos no orfanato:** 4 (chegou em 1983, com 3 anos)
 - **Causa oficial:** "Afogamento acidental na cave durante limpeza"
 - **Causa real:** Afogada num balde como castigo por molhar a cama
-- **Quem a matou:** Irma Beatriz
+- **Quem a matou:** Irma Carmo (ou alguem do sistema que ela representa)
 - **Papel no trio:** A GUIA
 
 ---
@@ -284,19 +284,20 @@ Os desenhos eram avisos. Ninguem os leu.
 ## A VINGANCA
 
 ### Quem matou
-**Irma Beatriz** - a mulher que a afogou
+**Irma Carmo** - a que administrou o castigo que a matou, ou que CONTINUOU o sistema
 
 ### Como matou
-Afogamento. Pulmoes cheios de agua. Na cave seca ha decadas.
+Afogamento num balde com apenas 11cm de agua. Na lavandaria trancada por dentro. Marcas de maos de crianca nos ombros - forcando a cabeca para baixo.
 
 ### Justica poetica
-Beatriz morreu exactamente como matou Sofia. Com a cabeca num balde. Afogada em agua que nao existia.
+Carmo morreu exactamente como Sofia morreu. Com a cabeca num balde. Forcada por maos pequenas. Afogada em quase nada de agua.
 
 ### Detalhes sobrenaturais
-- Agua nos pulmoes de Beatriz datada de ~1987
-- Cave completamente seca ha decadas
-- Balde velho encontrado ao lado - com marca de agua recente
-- Cabelo de Beatriz molhado, chao seco
+- Balde com apenas 11cm de agua - impossivel afogar-se assim
+- Marcas de maos de CRIANCA nos ombros (8-10 anos)
+- Porta trancada por dentro, chave no bolso da vitima
+- Nenhum sinal de luta ou resistencia
+- Chamada recebida as 03:33 - sem origem identificada
 
 ---
 
@@ -636,9 +637,9 @@ Miguel escolheu essa hora. Para que as freiras soubessem EXACTAMENTE porque morr
 
 | Nome | Morte | Idade | Causa Real | Papel | Matou |
 |------|-------|-------|------------|-------|-------|
-| **Joao** | 1973 | 9 | Negligencia/incendio | Executor | Carmo (fumo) |
-| **Sofia** | 1987 | 7 | Afogada por Beatriz | Guia | Beatriz (agua) |
-| **Miguel** | 2008 | 11 | Empurrado por Beatriz | Lider | Conceicao (queda) |
+| **Joao** | 1973 | 9 | Negligencia/incendio | Executor | Beatriz (queimaduras internas) |
+| **Sofia** | 1987 | 7 | Afogada por Carmo | Guia | Carmo (afogamento em balde) |
+| **Miguel** | 2008 | 11 | Empurrado por Beatriz | Lider | Conceicao (impactos multiplos) |
 
 ## Objectos no Compartimento Final
 

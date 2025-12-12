@@ -67,29 +67,29 @@ Este documento resolve TODAS as inconsistencias encontradas entre os varios docu
 
 ## Relacao Fantasma → Freira
 
-| Fantasma | Matou | Motivo |
-|----------|-------|--------|
-| **Miguel** | Conceicao | Ela assistiu e aprovou a morte dele |
-| **Sofia** | Beatriz | Ela segurou Sofia debaixo de agua |
-| **Joao** | Carmo | Ela cobriu a morte dele nos registos |
+| Fantasma | Matou | Motivo | Metodo (justica poetica) |
+|----------|-------|--------|--------------------------|
+| **Miguel** | Conceicao | Ela assistiu e aprovou a morte dele | Impactos (Miguel foi empurrado) |
+| **Joao** | Beatriz | Ela ignorou/encobriu a morte dele | Fogo interno (Joao morreu no incendio) |
+| **Sofia** | Carmo | Ela administrou o castigo que a matou | Afogamento (Sofia foi afogada) |
 
 ## Metodos de Morte (OFICIAL)
 
 | Freira | Como Morreu | Local | Impossibilidade |
 |--------|-------------|-------|-----------------|
-| **Conceicao** | Impacto vertical (como queda de grande altura) | Escritorio (res-do-chao) | Escritorio no res-do-chao, tecto a 3m |
-| **Beatriz** | Afogamento (pulmoes cheios de agua) | Cave | Cave seca ha decadas, cabelo molhado |
-| **Carmo** | Inalacao de fumo (pulmoes negros) | Cozinha | Nao houve fogo, detectores nao dispararam |
+| **Conceicao** | Impactos multiplos (como se projectada de varias direccoes) | Capela | Portas trancadas por dentro, sem sinais de luta, padrão de lesões impossível |
+| **Beatriz** | Queimaduras internas (orgaos carbonizados) | Cozinha | Pele e vestes intactas, sem fonte de calor, "cozinhada por dentro" |
+| **Carmo** | Afogamento (em 11cm de agua num balde) | Lavandaria | Impossível afogar-se assim, marcas de mãos de criança nos ombros |
 
-**DESCARTADO:** "Queimaduras sem fogo" para Beatriz (era erro no ESTRUTURA_5_ACTOS)
+**NOTA:** Cada morte espelha como o fantasma vingador morreu - justiça poética
 
 ## Detalhe Sobrenatural de Cada Morte
 
 | Freira | Detalhe Estranho |
 |--------|------------------|
-| **Conceicao** | Diario aberto na pagina de 2008, frase sublinhada com caneta de Miguel |
-| **Beatriz** | Balde velho com marca de agua recente, agua nos pulmoes datada de 1987 |
-| **Carmo** | Cinza debaixo das unhas, analise forense mostra cinza de 1973 |
+| **Conceicao** | Terço partido, relógio parou às 03:33, expressão de terror no rosto |
+| **Beatriz** | Telemóvel registou alarme às 03:33, órgãos a 400°C sem fonte de calor |
+| **Carmo** | Marcas de mãos de criança nos ombros, chamada às 03:33 sem origem |
 
 ---
 
@@ -106,7 +106,7 @@ Este documento resolve TODAS as inconsistencias encontradas entre os varios docu
 | Causa real | Incendio acidental causado por negligencia - queria atencao |
 | Personalidade | Invisivel, ignorado, gostava de desenhar passaros |
 | Como fantasma | Aparece em reflexos, com fogo atras. Cria "acidentes". |
-| Matou | Irma Carmo (fumo) |
+| Matou | Irma Beatriz (queimaduras internas - justica poetica) |
 
 ## Sofia (A Mais Jovem)
 
@@ -117,10 +117,10 @@ Este documento resolve TODAS as inconsistencias encontradas entre os varios docu
 | Morte | 1987, 7 anos |
 | Causa oficial | "Afogamento acidental na cave durante limpeza" |
 | Causa real | Afogada num balde como castigo por molhar a cama |
-| Quem a matou | Irma Beatriz (segurou-a) |
+| Quem a matou | Irma Carmo (administrou o castigo) |
 | Personalidade | Timida, quase muda, desenhava casas escuras e figuras debaixo de agua |
 | Como fantasma | Aparece molhada, chora, aponta caminhos. Salvou Carla em 2001. |
-| Matou | Irma Beatriz (afogamento) |
+| Matou | Irma Carmo (afogamento - justica poetica) |
 
 ## Miguel (O Lider)
 
@@ -271,7 +271,14 @@ Este documento resolve TODAS as inconsistencias encontradas entre os varios docu
 3. **Idades dos fantasmas:** Joao 9, Sofia 7, Miguel 11
 4. **Hora das mortes:** 03:33 (SEMPRE)
 5. **Local:** Sintra (SEMPRE)
-6. **Metodos:** Queda, Afogamento, Fumo (NUNCA degolacao, enforcamento, queimaduras)
+6. **Metodos de morte das freiras:**
+   - Conceicao: Impactos multiplos (Miguel matou-a)
+   - Beatriz: Queimaduras internas (Joao matou-a)
+   - Carmo: Afogamento em balde (Sofia matou-a)
+7. **Locais das mortes:**
+   - Conceicao: Capela
+   - Beatriz: Cozinha
+   - Carmo: Lavandaria
 
 ---
 
