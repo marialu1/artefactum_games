@@ -1,0 +1,102 @@
+---
+import { getLangFromUrl, t, languages, getTranslatedPath, getRoute } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-bg-deep/90 backdrop-blur-sm border-b border-bg-elevated">
+  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href={getRoute(lang, 'home')} class="font-display text-xl tracking-wide hover:text-accent-gold transition-colors">
+      Artefactum
+    </a>
+
+    <!-- Navigation -->
+    <ul class="hidden md:flex items-center gap-8 text-sm">
+      <li>
+        <a href={getRoute(lang, 'games')} class="text-text-secondary hover:text-text-primary transition-colors">
+          {t(lang, 'nav.games')}
+        </a>
+      </li>
+      <li>
+        <a href={getRoute(lang, 'about')} class="text-text-secondary hover:text-text-primary transition-colors">
+          {t(lang, 'nav.about')}
+        </a>
+      </li>
+      <li>
+        <a href={getRoute(lang, 'contact')} class="text-text-secondary hover:text-text-primary transition-colors">
+          {t(lang, 'nav.contact')}
+        </a>
+      </li>
+      <li>
+        <a href={getRoute(lang, 'custom')} class="text-accent-gold hover:text-accent-gold-hover transition-colors">
+          {t(lang, 'nav.custom')}
+        </a>
+      </li>
+    </ul>
+
+    <!-- Language Switcher -->
+    <div class="flex items-center gap-2 text-sm">
+      {Object.entries(languages).map(([code, name]) => (
+        <a
+          href={getTranslatedPath(currentPath, code as keyof typeof languages)}
+          class:list={[
+            'px-2 py-1 rounded transition-colors',
+            lang === code
+              ? 'bg-bg-elevated text-text-primary'
+              : 'text-text-muted hover:text-text-secondary'
+          ]}
+        >
+          {code.toUpperCase()}
+        </a>
+      ))}
+    </div>
+
+    <!-- Mobile menu button -->
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden p-2 text-text-secondary hover:text-text-primary"
+      aria-label="Menu"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-bg-surface border-t border-bg-elevated">
+    <ul class="px-4 py-4 space-y-4">
+      <li>
+        <a href={getRoute(lang, 'games')} class="block text-text-secondary hover:text-text-primary">
+          {t(lang, 'nav.games')}
+        </a>
+      </li>
+      <li>
+        <a href={getRoute(lang, 'about')} class="block text-text-secondary hover:text-text-primary">
+          {t(lang, 'nav.about')}
+        </a>
+      </li>
+      <li>
+        <a href={getRoute(lang, 'contact')} class="block text-text-secondary hover:text-text-primary">
+          {t(lang, 'nav.contact')}
+        </a>
+      </li>
+      <li>
+        <a href={getRoute(lang, 'custom')} class="block text-accent-gold">
+          {t(lang, 'nav.custom')}
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn?.addEventListener('click', () => {
+    menu?.classList.toggle('hidden');
+  });
+</script>

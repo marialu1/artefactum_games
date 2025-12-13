@@ -1,0 +1,85 @@
+{
+  "site": {
+    "name": "Artefactum Games",
+    "tagline": "Crafting mysteries. One clue at a time.",
+    "description": "Murder mystery games made with curiosity, AI, and questionable sleep schedules."
+  },
+  "nav": {
+    "home": "Home",
+    "games": "Games",
+    "about": "About",
+    "contact": "Contact",
+    "custom": "Your Idea"
+  },
+  "home": {
+    "hero": {
+      "title": "Murder mysteries worth dying for",
+      "subtitle": "Handcrafted games for dinner parties, team events, and quiet evenings of investigation."
+    },
+    "games": {
+      "title": "Our Games",
+      "viewAll": "View all games"
+    },
+    "custom": {
+      "title": "Got a mystery idea?",
+      "description": "I'm always looking for new stories. Tell me about a setting, theme, or mystery that haunts you.",
+      "cta": "Share your idea"
+    },
+    "newsletter": {
+      "title": "Stay in the loop",
+      "description": "New games, behind-the-scenes, and the occasional confession.",
+      "placeholder": "your@email.com",
+      "cta": "Subscribe"
+    }
+  },
+  "games": {
+    "players": "Players",
+    "duration": "Duration",
+    "language": "Language",
+    "status": {
+      "available": "Available",
+      "coming_soon": "Coming Soon",
+      "sold_out": "Sold Out"
+    },
+    "cta": {
+      "buy": "Get the game",
+      "preorder": "Pre-order",
+      "notify": "Notify me"
+    },
+    "customize": {
+      "title": "Want this for your event?",
+      "description": "This game can be adapted for corporate events, parties, or custom themes.",
+      "cta": "Tell us about your event"
+    }
+  },
+  "about": {
+    "title": "About",
+    "intro": "I'm Maria. I make murder mystery games because I love stories where everyone's a suspect."
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Questions, ideas, or just want to say hi?",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+  "custom": {
+    "title": "Your Mystery Idea",
+    "intro": "Have a story that needs telling? A theme that would make a great game? I read everything.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "idea": "Your idea",
+      "ideaPlaceholder": "A 1920s speakeasy where the bartender knows too much... or maybe a Victorian séance gone wrong?",
+      "submit": "Share idea"
+    },
+    "note": "No promises, but the best ideas become games."
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "made": "Made with curiosity and questionable sleep schedules"
+  }
+}

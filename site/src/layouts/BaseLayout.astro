@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+import { getLangFromUrl, t, languages, getTranslatedPath } from '../i18n/utils';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const lang = getLangFromUrl(Astro.url);
+const { title, description } = Astro.props;
+
+const siteTitle = t(lang, 'site.name');
+const pageTitle = title ? `${title} | ${siteTitle}` : siteTitle;
+const pageDescription = description || t(lang, 'site.description');
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={pageDescription} />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts - preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Language alternates -->
+    {Object.keys(languages).map((l) => (
+      <link rel="alternate" hreflang={l} href={getTranslatedPath(Astro.url.pathname, l as keyof typeof languages)} />
+    ))}
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={lang === 'pt' ? 'pt_PT' : 'en_GB'} />
+
+    <title>{pageTitle}</title>
+  </head>
+  <body class="bg-bg-deep text-text-primary min-h-screen font-body antialiased">
+    <slot />
+
+    <!-- Easter egg for curious devs -->
+    <script>
+      console.log('%c// Hey, curious one.', 'color: #C9A961; font-size: 14px;');
+      console.log('%c// Made with Astro, Tailwind, and too much coffee.', 'color: #A8A8A8;');
+      console.log('%c// Want to chat? hello@artefactum.games', 'color: #A8A8A8;');
+    </script>
+  </body>
+</html>

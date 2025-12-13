@@ -1,0 +1,126 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { t } from '../../i18n/utils';
+
+const lang = 'pt';
+---
+
+<PageLayout>
+  <!-- Hero -->
+  <section class="max-w-4xl mx-auto px-4 py-16 md:py-24 text-center">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-display mb-6 leading-tight">
+      {t(lang, 'home.hero.title')}
+    </h1>
+    <p class="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto">
+      {t(lang, 'home.hero.subtitle')}
+    </p>
+  </section>
+
+  <!-- Games Section -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl md:text-3xl font-display mb-8 text-center">
+      {t(lang, 'home.games.title')}
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Christmas Murder 1926 -->
+      <article class="bg-bg-card rounded-lg overflow-hidden border border-bg-elevated hover:border-accent-gold/50 transition-colors group">
+        <div class="aspect-video bg-bg-elevated flex items-center justify-center text-text-muted">
+          <span class="text-sm">Hero image: christmas-murder-1926</span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-display mb-2 group-hover:text-accent-gold transition-colors">
+            Christmas Murder 1926
+          </h3>
+          <p class="text-text-secondary text-sm mb-4">
+            Um jantar de mistério da era Gatsby para 11 jogadores.
+            Um convidado é assassinado na véspera de Natal. Quem o fez?
+          </p>
+          <div class="flex items-center gap-4 text-xs text-text-muted mb-4">
+            <span>11 {t(lang, 'games.players')}</span>
+            <span>5-6h</span>
+            <span>PT</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-accent-gold font-display">24 Dez</span>
+            <a href="/pt/jogos/christmas-murder-1926" class="text-sm text-text-secondary hover:text-text-primary">
+              Saber mais →
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Orfanato -->
+      <article class="bg-bg-card rounded-lg overflow-hidden border border-bg-elevated hover:border-accent-gold/50 transition-colors group">
+        <div class="aspect-video bg-bg-elevated flex items-center justify-center text-text-muted">
+          <span class="text-sm">Hero image: orfanato</span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-display mb-2 group-hover:text-accent-gold transition-colors">
+            Orfanato Nossa Senhora das Dores
+          </h3>
+          <p class="text-text-secondary text-sm mb-4">
+            Um mistério de assassínio sobrenatural num orfanato português.
+            Três freiras mortas às 3:33. As mortes são impossíveis. A verdade é pior.
+          </p>
+          <div class="flex items-center gap-4 text-xs text-text-muted mb-4">
+            <span>1-4 {t(lang, 'games.players')}</span>
+            <span>2-3h</span>
+            <span>PT</span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="text-text-muted text-sm">{t(lang, 'games.status.coming_soon')}</span>
+            <a href="/pt/jogos/orfanato" class="text-sm text-text-secondary hover:text-text-primary">
+              Saber mais →
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Custom Game CTA -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <div class="bg-bg-surface rounded-lg p-8 md:p-12 text-center border border-bg-elevated">
+      <h2 class="text-2xl md:text-3xl font-display mb-4">
+        {t(lang, 'home.custom.title')}
+      </h2>
+      <p class="text-text-secondary mb-6 max-w-xl mx-auto">
+        {t(lang, 'home.custom.description')}
+      </p>
+      <a
+        href="/pt/personalizar"
+        class="inline-block bg-accent-gold text-bg-deep px-6 py-3 rounded font-medium hover:bg-accent-gold-hover transition-colors"
+      >
+        {t(lang, 'home.custom.cta')}
+      </a>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <div class="text-center">
+      <h2 class="text-xl font-display mb-2">
+        {t(lang, 'home.newsletter.title')}
+      </h2>
+      <p class="text-text-secondary text-sm mb-6">
+        {t(lang, 'home.newsletter.description')}
+      </p>
+      <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input
+          type="email"
+          name="email"
+          placeholder={t(lang, 'home.newsletter.placeholder')}
+          required
+          class="flex-1 px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none text-sm"
+        />
+        <button
+          type="submit"
+          class="px-6 py-3 bg-accent-gold text-bg-deep rounded font-medium hover:bg-accent-gold-hover transition-colors text-sm"
+        >
+          {t(lang, 'home.newsletter.cta')}
+        </button>
+      </form>
+    </div>
+  </section>
+</PageLayout>

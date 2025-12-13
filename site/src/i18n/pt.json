@@ -1,0 +1,85 @@
+{
+  "site": {
+    "name": "Artefactum Games",
+    "tagline": "A criar mistérios. Uma pista de cada vez.",
+    "description": "Jogos de mistério feitos com curiosidade, IA, e horários de sono questionáveis."
+  },
+  "nav": {
+    "home": "Início",
+    "games": "Jogos",
+    "about": "Sobre",
+    "contact": "Contacto",
+    "custom": "A Tua Ideia"
+  },
+  "home": {
+    "hero": {
+      "title": "Mistérios de assassínio que valem a pena morrer",
+      "subtitle": "Jogos artesanais para jantares, eventos de equipa, e noites tranquilas de investigação."
+    },
+    "games": {
+      "title": "Os Nossos Jogos",
+      "viewAll": "Ver todos os jogos"
+    },
+    "custom": {
+      "title": "Tens uma ideia para um mistério?",
+      "description": "Estou sempre à procura de novas histórias. Conta-me sobre um cenário, tema, ou mistério que te persegue.",
+      "cta": "Partilha a tua ideia"
+    },
+    "newsletter": {
+      "title": "Fica a par",
+      "description": "Novos jogos, bastidores, e confissões ocasionais.",
+      "placeholder": "o.teu@email.com",
+      "cta": "Subscrever"
+    }
+  },
+  "games": {
+    "players": "Jogadores",
+    "duration": "Duração",
+    "language": "Idioma",
+    "status": {
+      "available": "Disponível",
+      "coming_soon": "Em Breve",
+      "sold_out": "Esgotado"
+    },
+    "cta": {
+      "buy": "Comprar o jogo",
+      "preorder": "Pré-encomendar",
+      "notify": "Avisar-me"
+    },
+    "customize": {
+      "title": "Queres isto para o teu evento?",
+      "description": "Este jogo pode ser adaptado para eventos corporativos, festas, ou temas personalizados.",
+      "cta": "Fala-nos do teu evento"
+    }
+  },
+  "about": {
+    "title": "Sobre",
+    "intro": "Sou a Maria. Faço jogos de mistério porque adoro histórias onde todos são suspeitos."
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "Questões, ideias, ou só queres dizer olá?",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "message": "Mensagem",
+      "submit": "Enviar"
+    }
+  },
+  "custom": {
+    "title": "A Tua Ideia de Mistério",
+    "intro": "Tens uma história que precisa de ser contada? Um tema que daria um óptimo jogo? Eu leio tudo.",
+    "form": {
+      "name": "Nome",
+      "email": "Email",
+      "idea": "A tua ideia",
+      "ideaPlaceholder": "Um speakeasy dos anos 20 onde o barman sabe demais... ou talvez uma sessão espírita vitoriana que correu mal?",
+      "submit": "Partilhar ideia"
+    },
+    "note": "Sem promessas, mas as melhores ideias tornam-se jogos."
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados",
+    "made": "Feito com curiosidade e horários de sono questionáveis"
+  }
+}
