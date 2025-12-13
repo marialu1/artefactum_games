@@ -1,0 +1,102 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { t } from '../../i18n/utils';
+
+const lang = 'pt';
+---
+
+<PageLayout title={t(lang, 'nav.custom')}>
+  <section class="max-w-2xl mx-auto px-4 py-16">
+    <h1 class="text-4xl md:text-5xl font-display mb-4 text-center">
+      {t(lang, 'custom.title')}
+    </h1>
+    <p class="text-text-secondary text-center mb-12 max-w-xl mx-auto">
+      {t(lang, 'custom.intro')}
+    </p>
+
+    <form
+      action="#"
+      method="POST"
+      class="space-y-6"
+      data-placeholder="Conecta isto ao teu handler de formulários preferido"
+    >
+      <div>
+        <label for="name" class="block text-sm text-text-secondary mb-2">
+          {t(lang, 'custom.form.name')}
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm text-text-secondary mb-2">
+          {t(lang, 'custom.form.email')}
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="idea" class="block text-sm text-text-secondary mb-2">
+          {t(lang, 'custom.form.idea')}
+        </label>
+        <textarea
+          id="idea"
+          name="idea"
+          rows="8"
+          required
+          placeholder={t(lang, 'custom.form.ideaPlaceholder')}
+          class="w-full px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none resize-none placeholder:text-text-muted/50"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-accent-gold text-bg-deep px-6 py-3 rounded font-medium hover:bg-accent-gold-hover transition-colors"
+      >
+        {t(lang, 'custom.form.submit')}
+      </button>
+
+      <p class="text-text-muted text-sm text-center">
+        {t(lang, 'custom.note')}
+      </p>
+    </form>
+  </section>
+
+  <!-- O que procuro -->
+  <section class="max-w-3xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-display mb-6 text-center">
+      O que faz uma boa ideia de mistério?
+    </h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-bg-card p-6 rounded-lg border border-bg-elevated">
+        <h3 class="font-display text-accent-gold mb-2">Cenário</h3>
+        <p class="text-text-secondary text-sm">
+          Um lugar com segredos. Uma mansão isolada, um navio a afundar, um retiro de empresa, uma reunião de família...
+        </p>
+      </div>
+      <div class="bg-bg-card p-6 rounded-lg border border-bg-elevated">
+        <h3 class="font-display text-accent-gold mb-2">Motivações</h3>
+        <p class="text-text-secondary text-sm">
+          Porque é que importa? Herança, vingança, amor, poder, sobrevivência...
+        </p>
+      </div>
+      <div class="bg-bg-card p-6 rounded-lg border border-bg-elevated">
+        <h3 class="font-display text-accent-gold mb-2">Reviravolta</h3>
+        <p class="text-text-secondary text-sm">
+          O que o torna diferente? A vítima merecia. Todos são culpados. O detective é o assassino...
+        </p>
+      </div>
+    </div>
+  </section>
+</PageLayout>

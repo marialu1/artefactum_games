@@ -1,0 +1,150 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import { t } from '../../../i18n/utils';
+
+const lang = 'en';
+
+export async function getStaticPaths() {
+  const games = await getCollection('games', ({ data }) => data.lang === 'en');
+  return games.map((game) => ({
+    params: { slug: game.data.gameId },
+    props: { game },
+  }));
+}
+
+const { game } = Astro.props;
+const { Content } = await game.render();
+---
+
+<PageLayout title={game.data.title} description={game.data.description}>
+  <!-- Hero -->
+  <section class="max-w-4xl mx-auto px-4 pt-16 pb-8">
+    <div class="text-center mb-8">
+      <p class="text-accent-gold text-sm mb-2 tracking-wide uppercase">
+        {game.data.type.replace('-', ' ')}
+      </p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-display mb-4">
+        {game.data.title}
+      </h1>
+      <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+        {game.data.tagline}
+      </p>
+    </div>
+
+    <!-- Game meta -->
+    <div class="flex flex-wrap justify-center gap-6 text-sm text-text-muted mb-8">
+      <div class="flex items-center gap-2">
+        <span class="text-accent-gold">Players:</span>
+        <span>{game.data.players}</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-accent-gold">Duration:</span>
+        <span>{game.data.duration}</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-accent-gold">Language:</span>
+        <span>{game.data.language}</span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="flex justify-center gap-4 mb-12">
+      {game.data.status === 'available' && game.data.gumroadUrl ? (
+        <a
+          href={game.data.gumroadUrl}
+          class="bg-accent-gold text-bg-deep px-8 py-3 rounded font-medium hover:bg-accent-gold-hover transition-colors"
+        >
+          {t(lang, 'games.cta.buy')} — €{game.data.price}
+        </a>
+      ) : game.data.status === 'coming_soon' ? (
+        <span class="bg-bg-elevated text-text-secondary px-8 py-3 rounded">
+          {t(lang, 'games.status.coming_soon')}
+        </span>
+      ) : null}
+    </div>
+  </section>
+
+  <!-- Hero Image -->
+  {game.data.heroImage && (
+    <section class="max-w-5xl mx-auto px-4 mb-12">
+      <div class="aspect-video bg-bg-elevated rounded-lg overflow-hidden">
+        <img
+          src={game.data.heroImage}
+          alt={game.data.title}
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </section>
+  )}
+
+  <!-- Content -->
+  <section class="max-w-3xl mx-auto px-4 py-8">
+    <article class="prose prose-invert prose-gold max-w-none">
+      <Content />
+    </article>
+  </section>
+
+  <!-- Gallery -->
+  {game.data.gallery && game.data.gallery.length > 0 && (
+    <section class="max-w-5xl mx-auto px-4 py-12">
+      <h2 class="text-2xl font-display mb-6 text-center">Gallery</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {game.data.gallery.map((img, i) => (
+          <div class="aspect-square bg-bg-elevated rounded overflow-hidden">
+            <img src={img} alt={`${game.data.title} - Image ${i + 1}`} class="w-full h-full object-cover" />
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Customize CTA -->
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <div class="bg-bg-surface rounded-lg p-8 md:p-12 text-center border border-bg-elevated">
+      <h2 class="text-2xl font-display mb-4">
+        {t(lang, 'games.customize.title')}
+      </h2>
+      <p class="text-text-secondary mb-6 max-w-xl mx-auto">
+        {t(lang, 'games.customize.description')}
+      </p>
+      <a
+        href="/en/contact"
+        class="inline-block bg-bg-elevated text-text-primary px-6 py-3 rounded font-medium hover:bg-bg-card transition-colors border border-bg-elevated hover:border-accent-gold/50"
+      >
+        {t(lang, 'games.customize.cta')}
+      </a>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  /* Prose styling for markdown content */
+  .prose {
+    color: var(--color-text-primary);
+  }
+  .prose h2 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .prose p {
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+  .prose strong {
+    color: var(--color-text-primary);
+  }
+  .prose ul {
+    color: var(--color-text-secondary);
+    margin-bottom: 1rem;
+  }
+  .prose li {
+    margin-bottom: 0.5rem;
+  }
+  .prose a {
+    color: var(--color-accent-gold);
+  }
+</style>

@@ -1,0 +1,70 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { t } from '../../i18n/utils';
+
+const lang = 'pt';
+---
+
+<PageLayout title={t(lang, 'nav.about')}>
+  <section class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-4xl md:text-5xl font-display mb-8 text-center">
+      {t(lang, 'about.title')}
+    </h1>
+
+    <!-- PLACEHOLDER: Substitui com a tua história real -->
+    <div class="space-y-6 text-text-secondary leading-relaxed">
+      <p class="text-lg">
+        {t(lang, 'about.intro')}
+      </p>
+
+      <div class="border-l-2 border-accent-gold pl-6 my-8">
+        <p class="text-text-primary italic">
+          <!-- PLACEHOLDER: A tua citação ou filosofia -->
+          "A construir em público. Um commit confuso de cada vez."
+        </p>
+      </div>
+
+      <h2 class="text-2xl font-display text-text-primary mt-12 mb-4">
+        A Jornada
+      </h2>
+      <p>
+        <!-- PLACEHOLDER: A tua história -->
+        Aqui é onde contas a tua história. Como chegaste aqui? O que te leva a fazer jogos de mistério? Qual é o teu background?
+      </p>
+      <p>
+        <!-- PLACEHOLDER: Mais história -->
+        Fala sobre a tua jornada de aprendizagem com AI. Como estás a construir tudo sozinha. Os fracassos, as vitórias, os commits às 3 da manhã.
+      </p>
+
+      <h2 class="text-2xl font-display text-text-primary mt-12 mb-4">
+        Porquê Mistérios de Assassínio?
+      </h2>
+      <p>
+        <!-- PLACEHOLDER: O teu porquê -->
+        Porquê este género? O que adoras nele? O que queres que os jogadores sintam?
+      </p>
+
+      <h2 class="text-2xl font-display text-text-primary mt-12 mb-4">
+        As Ferramentas
+      </h2>
+      <p>
+        <!-- PLACEHOLDER: O teu processo -->
+        Tudo neste site — design, código, jogos, escrita — é feito por mim com AI como colaborador. Estou a aprender à medida que avanço.
+      </p>
+      <ul class="list-disc list-inside space-y-2 ml-4">
+        <li>Site: Astro + Tailwind</li>
+        <li>Design: Penpot</li>
+        <li>AI: Claude, Midjourney, ElevenLabs</li>
+        <li>Jogos: Typst, muita pesquisa, café a mais</li>
+      </ul>
+
+      <h2 class="text-2xl font-display text-text-primary mt-12 mb-4">
+        Conecta
+      </h2>
+      <p>
+        <!-- PLACEHOLDER: Links -->
+        Segue o caos no <a href="https://dominatedbycline.github.io" target="_blank" rel="noopener" class="text-accent-gold hover:text-accent-gold-hover">meu blog</a>.
+      </p>
+    </div>
+  </section>
+</PageLayout>

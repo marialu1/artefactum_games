@@ -1,0 +1,61 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import { t } from '../../../i18n/utils';
+
+const lang = 'pt';
+
+// Get all games in Portuguese
+const allGames = await getCollection('games', ({ data }) => data.lang === 'pt');
+const games = allGames.sort((a, b) => a.data.order - b.data.order);
+---
+
+<PageLayout title={t(lang, 'nav.games')}>
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-4xl md:text-5xl font-display mb-4 text-center">
+      {t(lang, 'home.games.title')}
+    </h1>
+    <p class="text-text-secondary text-center mb-12 max-w-2xl mx-auto">
+      <!-- PLACEHOLDER: Adicionar texto de introdução -->
+      Cada jogo é um mundo para te perderes. Escolhe o teu veneno.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {games.map((game) => (
+        <article class="bg-bg-card rounded-lg overflow-hidden border border-bg-elevated hover:border-accent-gold/50 transition-colors group">
+          <div class="aspect-video bg-bg-elevated flex items-center justify-center text-text-muted">
+            {game.data.heroImage ? (
+              <img src={game.data.heroImage} alt={game.data.title} class="w-full h-full object-cover" />
+            ) : (
+              <span class="text-sm">Hero image: {game.data.gameId}</span>
+            )}
+          </div>
+          <div class="p-6">
+            <h2 class="text-xl font-display mb-2 group-hover:text-accent-gold transition-colors">
+              {game.data.title}
+            </h2>
+            <p class="text-text-secondary text-sm mb-4">
+              {game.data.description}
+            </p>
+            <div class="flex items-center gap-4 text-xs text-text-muted mb-4">
+              <span>{game.data.players} {t(lang, 'games.players')}</span>
+              <span>{game.data.duration}</span>
+              <span>{game.data.language}</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class={`text-sm ${game.data.status === 'available' ? 'text-accent-gold' : 'text-text-muted'}`}>
+                {t(lang, `games.status.${game.data.status}`)}
+              </span>
+              <a
+                href={`/pt/jogos/${game.data.gameId}`}
+                class="text-sm text-text-secondary hover:text-text-primary transition-colors"
+              >
+                Saber mais →
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</PageLayout>

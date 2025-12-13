@@ -1,0 +1,70 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { t } from '../../i18n/utils';
+
+const lang = 'en';
+---
+
+<PageLayout title={t(lang, 'nav.about')}>
+  <section class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-4xl md:text-5xl font-display mb-8 text-center">
+      {t(lang, 'about.title')}
+    </h1>
+
+    <!-- PLACEHOLDER: Replace with your real story -->
+    <div class="space-y-6 text-text-secondary leading-relaxed">
+      <p class="text-lg">
+        {t(lang, 'about.intro')}
+      </p>
+
+      <div class="border-l-2 border-accent-gold pl-6 my-8">
+        <p class="text-text-primary italic">
+          <!-- PLACEHOLDER: Your personal quote or philosophy -->
+          "Building in public. One confused commit at a time."
+        </p>
+      </div>
+
+      <h2 class="text-2xl font-display text-text-primary mt-12 mb-4">
+        The Journey
+      </h2>
+      <p>
+        <!-- PLACEHOLDER: Your story -->
+        This is where you tell your story. How did you get here? What drives you to make murder mystery games? What's your background?
+      </p>
+      <p>
+        <!-- PLACEHOLDER: More story -->
+        Talk about your learning journey with AI. How you're building everything yourself. The failures, the wins, the 3am commits.
+      </p>
+
+      <h2 class="text-2xl font-display text-text-primary mt-12 mb-4">
+        Why Murder Mysteries?
+      </h2>
+      <p>
+        <!-- PLACEHOLDER: Your why -->
+        Why this genre? What do you love about it? What do you want players to feel?
+      </p>
+
+      <h2 class="text-2xl font-display text-text-primary mt-12 mb-4">
+        The Tools
+      </h2>
+      <p>
+        <!-- PLACEHOLDER: Your process -->
+        Everything on this site — design, code, games, writing — is made by me with AI as my collaborator. I'm learning as I go.
+      </p>
+      <ul class="list-disc list-inside space-y-2 ml-4">
+        <li>Site: Astro + Tailwind</li>
+        <li>Design: Penpot</li>
+        <li>AI: Claude, Midjourney, ElevenLabs</li>
+        <li>Games: Typst, lots of research, too much coffee</li>
+      </ul>
+
+      <h2 class="text-2xl font-display text-text-primary mt-12 mb-4">
+        Connect
+      </h2>
+      <p>
+        <!-- PLACEHOLDER: Links -->
+        Follow the chaos on <a href="https://dominatedbycline.github.io" target="_blank" rel="noopener" class="text-accent-gold hover:text-accent-gold-hover">my blog</a>.
+      </p>
+    </div>
+  </section>
+</PageLayout>

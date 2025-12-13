@@ -10,7 +10,6 @@
 
 | Acto | Nome | Duração | Código | Pergunta |
 |------|------|---------|--------|----------|
-| 0 | Abertura | 5 min | - | Após vídeo inicial |
 | 1 | O Crime | 30-40 min | **0333** | "A que horas morreram?" |
 | 2 | As Suspeitas | 30-40 min | **MIGUEL** | "6 letras, o rapaz que lia" |
 | 3 | Os Mortos | 30-40 min | **2008** | "Ano da morte de Miguel" |
@@ -102,27 +101,13 @@
 │  [Final: "O que aconteceu às 03:33?"]                      │
 │                                                             │
 │  🎬 A CRIAR                                                 │
+│                                                             │
+│  → Vídeo termina → AUTOMÁTICO → Acto 1 começa              │
 └─────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
-│                   PUZZLE 0 — ABERTURA                       │
-│                                                             │
-│  Pergunta: "Quantas freiras morreram naquela noite?"       │
-│  Resposta: 3                                                │
-│                                                             │
-│  OU                                                         │
-│                                                             │
-│  Pergunta: "Como se chama o orfanato?"                     │
-│  Resposta: Nossa Senhora das Dores                         │
-│                                                             │
-│  [? HELP] disponível                                        │
-│  → Primeiro a acertar → TODOS avançam                      │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────┐
-│              CAIXA PRINCIPAL ABRE                           │
+│         ACTO 1 COMEÇA — CAIXA PRINCIPAL ABRE               │
 │                                                             │
 │  Website: "Podem abrir a caixa principal"                  │
 │                                                             │
@@ -426,10 +411,10 @@ Todos avançam automaticamente
 
 ## PRÓXIMO PASSO IMEDIATO
 
-1. **Decidir Puzzle 0** — Qual pergunta após o vídeo?
-2. **Criar vídeo inicial** — Atmosfera + contexto
-3. **Completar Acto 1** — Testemunho Dr. António
-4. **Criar testemunhos Acto 2** — Rosa, Ana, Matilde, Helena
+1. **Criar vídeo inicial** — Atmosfera + contexto (2-3 min)
+2. **Completar Acto 1** — Testemunho Dr. António
+3. **Criar testemunhos Acto 2** — Rosa, Ana, Matilde, Helena
+4. **Website** — Sistema de salas + sincronização
 
 ---
 

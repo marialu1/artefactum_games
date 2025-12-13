@@ -1,0 +1,83 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { t } from '../../i18n/utils';
+
+const lang = 'pt';
+---
+
+<PageLayout title={t(lang, 'nav.contact')}>
+  <section class="max-w-2xl mx-auto px-4 py-16">
+    <h1 class="text-4xl md:text-5xl font-display mb-4 text-center">
+      {t(lang, 'contact.title')}
+    </h1>
+    <p class="text-text-secondary text-center mb-12">
+      {t(lang, 'contact.description')}
+    </p>
+
+    <form
+      action="#"
+      method="POST"
+      class="space-y-6"
+      data-placeholder="Conecta isto ao Formspree, Netlify Forms, ou o teu próprio backend"
+    >
+      <div>
+        <label for="name" class="block text-sm text-text-secondary mb-2">
+          {t(lang, 'contact.form.name')}
+        </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="email" class="block text-sm text-text-secondary mb-2">
+          {t(lang, 'contact.form.email')}
+        </label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none"
+        />
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm text-text-secondary mb-2">
+          {t(lang, 'contact.form.message')}
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          required
+          class="w-full px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none resize-none"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-accent-gold text-bg-deep px-6 py-3 rounded font-medium hover:bg-accent-gold-hover transition-colors"
+      >
+        {t(lang, 'contact.form.submit')}
+      </button>
+    </form>
+
+    <!-- Contacto directo -->
+    <div class="mt-12 pt-8 border-t border-bg-elevated text-center">
+      <p class="text-text-muted text-sm mb-4">
+        Ou entra em contacto directamente:
+      </p>
+      <a
+        href="mailto:hello@artefactum.games"
+        class="text-accent-gold hover:text-accent-gold-hover"
+      >
+        hello@artefactum.games
+      </a>
+    </div>
+  </section>
+</PageLayout>
