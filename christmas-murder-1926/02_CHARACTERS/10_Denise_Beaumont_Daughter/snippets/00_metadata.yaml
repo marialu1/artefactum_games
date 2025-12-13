@@ -1,0 +1,64 @@
+# Esmeralda Beaumont - Character Metadata
+
+character:
+  name: "Esmeralda Beaumont"
+  nickname: "The Bad Twin"
+  player: "Esmeralda"
+  
+role:
+  type: "INNOCENT"
+  status: "Strongest Suspect - RED HERRING"
+  complexity: "HIGH"
+  
+identity:
+  age: 26
+  birth_date: "January 12, 1900"
+  birth_location: "Manhattan, New York"
+  occupation: "Factory Worker (Garment District)"
+  social_class: "Working Poor"
+  
+family:
+  birth_mother: "Martha Beaumont (died in childbirth)"
+  biological_father: "Reginald Ashford III (abandoned)"
+  twin_sister: "Claire 'Claire' Beaumont (separated at birth)"
+  upbringing: "St. Agnes Orphanage (1900-1918) - never adopted"
+  
+secrets:
+  public:
+    - "Grew up in orphanage, never adopted"
+    - "Recently reunited with twin sister"
+    - "Father invited her to party"
+  private:
+    - "Blackmailed father for $800"
+    - "Has blackmail receipts in bag"
+    - "Planned father's murder with Claire"
+    - "Didn't execute - someone else killed him"
+    
+personality:
+  traits:
+    - "Survivor - tough, ruthless"
+    - "Angry - justified rage"
+    - "Loyal - fiercely to Claire only"
+    - "Resentful - class hatred"
+    - "Guarded - walls up always"
+  signature_tell: "Arms crossed defensively"
+  speech_pattern: "Aggressive, sarcastic, working-class accent"
+  
+key_relationships:
+  primary: "Claire (twin - everything)"
+  victim: "Reggie (father - pure hatred)"
+  investigator: "JC (hostile but honest)"
+  killer: "Helena (grudging respect when revealed)"
+  
+performance_notes:
+  challenge: "Be MOST suspicious without being cartoonish"
+  balance: "Tough survivor + loving sister + actually innocent"
+  arc: "Ready → Cheated → Defiant → Honest → Resigned"
+  
+design:
+  color_scheme: "Black, deep red"
+  visual_motif: "Sharp edges, knife imagery"
+  emoji: "🗡️"
+  
+version: "2.0"
+status: "READY"

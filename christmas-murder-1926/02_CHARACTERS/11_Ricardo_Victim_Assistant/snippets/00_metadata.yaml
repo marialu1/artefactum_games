@@ -1,0 +1,80 @@
+# Ricardo - Dual Role Character Metadata
+
+character:
+  name: "Ricardo (Dual Role)"
+  roles:
+    - "Reginald 'Reggie' Ashford III (Victim)"
+    - "Clarence Worthington (Butler/Witness)"
+  player: "Ricardo"
+  
+role:
+  type: "DUAL"
+  phase_1: "Victim (20h00-20h09)"
+  phase_2: "Butler/GM Assistant (20h18-end)"
+  complexity: "EXTREME"
+  
+phase_1_reggie:
+  character: "Reginald Ashford III"
+  nickname: "Reggie"
+  duration: "~10 minutes"
+  goal: "Make everyone want you dead"
+  exit: "20h09 - led to office by Helena"
+  
+phase_2_clarence:
+  character: "Clarence Worthington"
+  title: "Butler"
+  duration: "~2.5 hours"
+  goal: "Assist GM + deliver critical testimony"
+  key_moment: "22h00 - testimony identifies killers"
+  
+transition:
+  duration: "9 minutes (20h09-20h18)"
+  tasks:
+    - "Costume change"
+    - "Character switch"
+    - "Prepare testimony"
+  location: "Offstage/backstage"
+  
+reggie_identity:
+  age: 48
+  birth_date: "April 15, 1878"
+  occupation: "Textile Magnate"
+  wealth: "Millionaire"
+  personality:
+    - "Charming (weapon)"
+    - "Cruel (core)"
+    - "Arrogant (entitled)"
+    - "Controlling (possessive)"
+    - "Ruthless (business & personal)"
+    
+clarence_identity:
+  age: 63
+  service_years: 15
+  origin: "England, working class"
+  personality:
+    - "Loyal (until murder)"
+    - "Formal (always)"
+    - "Observant (invisible witness)"
+    - "Reluctant (testimony)"
+    - "Helpful (GM assistant)"
+    
+critical_testimony:
+  time: "22h00 (Act IV)"
+  purpose: "Identifies Helena + James as killers"
+  key_evidence: "Timeline of both near office during murder"
+  impact: "Solves the murder"
+  
+performance_notes:
+  challenge: "Two complete characters + quick transformation"
+  reggie_goal: "Be insufferable but not cartoonish"
+  clarence_goal: "Be invisible but crucial"
+  gm_duties: "Assist Helena with logistics throughout"
+  
+design:
+  reggie_colors: "Dark suit, flashy"
+  clarence_colors: "Butler black, formal"
+  visual_distinction: "Posture change is key (80% of transformation)"
+  emoji: "🎭"
+  
+version: "2.0"
+status: "READY"

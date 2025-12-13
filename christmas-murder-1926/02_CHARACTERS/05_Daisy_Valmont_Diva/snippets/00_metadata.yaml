@@ -1,0 +1,57 @@
+# DAISY VALMONT - CHARACTER METADATA
+# Quick Sheet Generation - V2.0 Structure
+
+character:
+  name: "Daisy Margot Valmont"
+  title: "The Scarlet Nightingale"
+  age: 28
+  profession: "Cabaret Singer"
+  venue: "Cotton Club, Harlem"
+  player: "Maria"
+  
+visual_identity:
+  primary_color: "#DC143C"  # Crimson/Scarlet Red
+  secondary_color: "#2C2C2C"  # Deep charcoal (vintage elegance)
+  accent_color: "#FFD700"  # Gold (art deco accents)
+  theme: "Art Deco Flapper Glamour"
+  motifs:
+    - "Vintage microphone silhouette"
+    - "Rose with thorns"
+    - "Feather boa"
+    - "Musical notes"
+    - "Art deco frames"
+  
+cover:
+  quote: "♪ \"Darling, the show must go on... even when roses have thorns.\" ♪"
+  tagline: "The Scarlet Nightingale"
+  aesthetic: "1920s cabaret glamour with dramatic flair"
+  
+game_mechanics:
+  role: "INNOCENT"
+  status: "Primary Suspect (Red Herring)"
+  motive: "Dumped mistress (crime passional)"
+  alibi: "Performing during murder (20h15-20h17)"
+  vulnerability: "Break period 20h09-20h14 (no witnesses)"
+  
+special_features:
+  performance_required: true
+  songs:
+    - "Summertime (20h05-20h08)"
+    - "My Funny Valentine (20h15-20h17)"
+  physical_tells:
+    - "Pearl touching when lying"
+    - "Fan flourishing for emphasis"
+    - "Switches to French when stressed"
+  
+character_essence:
+  core_conflict: "Performance as survival vs. genuine emotion"
+  secret_mission: "Find proof Eleanor's death wasn't natural"
+  hidden_truth: "Eleanor Ashford was her half-sister"
+  emotional_core: "Deep grief masked by theatrical glamour"
+
+layout_preferences:
+  font_primary: "Great Vibes"  # Elegant script for headers
+  font_secondary: "Crimson Text"  # Body text
+  font_accent: "Lato"  # Labels
+  ornament_style: "Art deco borders and dividers"
+  page_style: "Vintage cabaret poster aesthetic"

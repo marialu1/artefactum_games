@@ -1,0 +1,53 @@
+character_name: "Emília Cristina Harrods"
+player_name: "Cris (Cristina)"
+age: 38
+occupation: "Spiritualist / Medium"
+former_occupation: "Nun (Sister Cristina, 1910-1918)"
+role: "Séance Leader / Suicide Victim"
+status: "INNOCENT - Tragic Victim"
+game_fate: "Dies by suicide Act IV (~22h30)"
+
+connection_to_victim: "Polite acquaintance (felt spiritual darkness in him)"
+connection_to_host: "Married to James Harrods, invited as couple"
+
+key_traits:
+  - "Genuinely spiritual"
+  - "Gentle and compassionate"
+  - "Devoted wife (unaware of betrayal)"
+  - "Former nun"
+  - "Tragic innocent"
+
+signature_phrases:
+  - "I sense a presence..."
+  - "The spirits are restless tonight..."
+  - "May God have mercy on their souls..."
+  - "Love never dies, it only transforms..."
+
+mannerisms:
+  - "Speaks softly with Portuguese lilt"
+  - "Touches rosary beads"
+  - "Closes eyes when 'listening' to spirits"
+  - "Gentle hand gestures when blessing"
+
+special_abilities:
+  - "Séance Leader (conducts two séances Act III)"
+  - "Spiritual Intuition"
+  - "Rosary Comfort"
+
+key_relationships:
+  - name: "James Harrods"
+    relation: "Husband (secretly betraying her)"
+  - name: "Helena Ashford"
+    relation: "Hostess (secret rival - James's lover)"
+  - name: "Father Juan Carlos"
+    relation: "Former confessor (knew her as Sister Cristina)"
+  - name: "Reggie Ashford"
+    relation: "Victim (sensed evil in him)"
+
+did_kill: false
+motive: "None - completely innocent"
+
+secret_count: 4
+public_secret: "Ex-nun (Sister Cristina) who left convent for love"
+
+trigger_warning: "This character dies by suicide Act IV. Sensitive content. Player should be briefed beforehand."

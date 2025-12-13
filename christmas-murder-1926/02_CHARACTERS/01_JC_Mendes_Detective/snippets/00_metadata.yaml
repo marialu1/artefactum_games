@@ -1,0 +1,47 @@
+character_name: "John Alfred Jones"
+nickname: "JC"
+age: 45
+profession: "Former NYPD Detective / Private Investigator"
+player: "JC"
+role: "INVESTIGATOR (Innocent)"
+status: "LEAD DETECTIVE - Must solve murder"
+archetype: "Columbo-style detective (bumbling exterior, brilliant mind)"
+
+# Character essence
+tagline: "The Unassuming Detective"
+core_trait: "Humble appearance, sharp mind - Columbo approach"
+signature_phrase: "Just one more question, if you don't mind..."
+signature_tell: "Notebook ritual (writes everything slowly)"
+
+# Background
+nationality: "Portuguese immigrant (1896, age 15)"
+residence: "Lower East Side, Manhattan"
+marital_status: "Widower (wife Maria died 1918, Spanish flu)"
+career_history: "NYPD 20 years (1901-1921), forced out for exposing corruption"
+
+# Connection to event
+hired_by: "Helena Ashford (November 1926)"
+contract_purpose: "Security consultant (vague, actually for murder staging)"
+contract_duration: "November-December 1926 ($200)"
+irony: "Hired by killer to investigate killing"
+
+# Game role
+investigation_style: "Columbo method (gentle, apologetic, observant)"
+authority: "Legitimate investigator (hired security = can question everyone)"
+challenge: "Solve murder + manage game pacing + stay in character"
+goal: "Identify killers (James + Helena), protect innocent"
+
+# Visual identity
+colors: ["brown", "gray", "muted tones"]
+symbols: ["magnifying glass", "notebook", "question mark"]
+aesthetic: "1920s noir detective, rumpled but professional"
+
+# Secrets
+public_info: "Former NYPD detective, hired as security"
+hidden_motive: "Personal redemption (last case, honor Maria's memory)"
+trauma: "Wife's death (1918), NYPD corruption scandal (1921)"
+
+# Key relationships
+primary_dynamic: "Investigator to all suspects"
+empathy_for: "Emilia (sees Maria in her), Filipp (fellow immigrant)"
+respect_for: "James (will confess with dignity when caught)"

@@ -1,0 +1,71 @@
+# Character Build Configuration - Filipp Moretti
+# Last Updated: October 8, 2025
+
+character:
+  name: "Filipp Antonio Moretti"
+  slug: "filipp_moretti"
+  title: "The Silver Fox"
+  age: 38
+  player: "TBD"  # PENDING ASSIGNMENT
+  role: "Speakeasy Entrepreneur / INNOCENT"
+
+booklet:
+  title: "CONFIDENTIAL DOSSIER"
+  subtitle: "Filipp Antonio Moretti"
+  font_header: "Cinzel"
+  font_body: "Montserrat"
+  font_accent: "Great Vibes"
+  page_count: 12  # A5 portrait pages (6 A4 landscape when printed)
+  
+cover:
+  # Use existing Canva covers (already designed)
+  front: "covers/front_cover.png"  # Extract from Canva PDF
+  back: "covers/back_cover.png"    # Extract from Canva PDF or shared template
+  
+  # Cover overlays (optional text on cover image)
+  stamp_text: "CONFIDENTIAL"
+  stamp_color: "red"
+  stamp_rotation: -15
+  cover_text_enabled: false  # Text already in Canva design
+
+layout:
+  # Section order (can be reordered here without touching content files)
+  sections:
+    - identity
+    - relationships
+    - personality
+    - public_secret
+    - private_secrets  # Combines 08, 09, 10, 11
+    - goals
+    - did_you_kill
+    - how_to_play
+  
+  # Sections to omit (empty for Filipp, but useful for other characters)
+  omit_sections: []
+  
+  # Page break preferences
+  page_breaks:
+    after_relationships: true
+    after_secrets: true
+    before_how_to_play: true
+
+print:
+  format: "saddle_stitch"
+  paper: "A5_portrait"
+  margins: "15mm"
+  gutter: "10mm"  # Extra margin at spine for saddle-stitch
+  
+build:
+  # Python + LaTeX pipeline
+  method: "latex"
+  template: "templates/character_booklet_template.tex"
+  
+  # Manual assembly mode (for human judgment)
+  manual_review: true
+  auto_compile: false  # Don't auto-compile, wait for human approval
+
+notes:
+  # Build notes for human review
+  date_corrections: "Piano wire date corrected to Dec 21 (was Dec 23)"
+  special_instructions: "Use existing Canva cover pages 1-2, assemble content from snippets for pages 3-12"
+  warnings: "Player assignment still pending - update before finalizing"

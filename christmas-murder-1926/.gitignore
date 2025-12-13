@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+digest.txt
+digest-compact.txt
+*.log
+
+# Generated PDFs (can be regenerated with `make pdf`)
+*.pdf
+
+# Temporary files
+*.tmp
+*.bak
+venv/

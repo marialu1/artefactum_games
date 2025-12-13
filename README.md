@@ -6,9 +6,28 @@ Learning AI by creating games I love. Each project is a learning journey documen
 
 ---
 
-## Current Project
+## Projects
 
-### Orfanato Nossa Senhora das Dores
+### 1. Christmas Murder 1926 ✅ (First Game)
+
+| | |
+|---|---|
+| **Status** | 75% Complete |
+| **Type** | Live-action murder mystery dinner party |
+| **Players** | 11 players + Game Master |
+| **Duration** | 5-6 hours |
+| **Language** | Portuguese |
+| **Event Date** | December 24, 2025 |
+
+An immersive murder mystery set in 1926 Manhattan at Gatsby Rose Manor. Guests arrive for a Christmas Eve soirée when one is murdered. Players assume character roles, investigate clues across 3 tiers, and unmask the killer while staying in character.
+
+**Progress:** Character dossiers 90% complete, 26 clues designed, master script ready.
+
+[View project details](./christmas-murder-1926/)
+
+---
+
+### 2. Orfanato Nossa Senhora das Dores
 
 | | |
 |---|---|
@@ -46,7 +65,16 @@ A supernatural murder mystery set in a Portuguese orphanage. Three nuns are foun
 
 ```
 artefactum_games/
-├── orfanato/                    # Current project
+├── christmas-murder-1926/       # First game - Live dinner party
+│   ├── 00_PROJECT_DOCS/         # Timelines, checklists
+│   ├── 01_CORE_NARRATIVE/       # Crime story, relationships
+│   ├── 02_CHARACTERS/           # 11 character dossiers
+│   ├── 03_UNIVERSAL_MATERIALS/  # Invitations, menus, rules
+│   ├── 04_GAME_MASTER_MATERIALS/# Master script, 26 clues
+│   ├── 06_PROPS_AND_PHYSICAL/   # Props list (~20 items)
+│   ├── 07_FOOD_AND_LOGISTICS/   # Menu, seating, schedule
+│   └── 09_DESIGN_ASSETS/        # Fonts, palettes, templates
+├── orfanato/                    # Second game - Box + app
 │   ├── docs/                    # Design documents
 │   │   ├── ESTRUTURA_5_ACTOS.md # Game blueprint (START HERE)
 │   │   ├── GDD.md               # Game Design Document

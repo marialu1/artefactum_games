@@ -1,0 +1,51 @@
+character_name: "Claire Claire Beaumont"
+nickname: "Claire"
+age: 26
+profession: "Wealthy daughter (no profession)"
+player: "Claire"
+role: "INNOCENT (Strong Suspect)"
+status: "Planned murder but didn't execute - RED HERRING"
+archetype: "Good twin struggling with darkness"
+
+# Character essence
+tagline: "The Good Twin"
+core_trait: "Moral compass vs. desire for revenge"
+signature_phrase: "I wanted to do the right thing, but..."
+signature_tell: "Touches pearl necklace when anxious"
+
+# Background
+nationality: "American (Manhattan born)"
+residence: "Upper East Side, Manhattan (adopted family)"
+marital_status: "Single"
+family_status: "Adopted by wealthy Beaumonts, twin to Denise (separated at birth, reunited Nov 1926)"
+
+# Twin dynamic
+twin_sister: "Esmeralda Beaumont (Bad Twin)"
+twin_separation: "Birth (1900), reunited November 5, 1926"
+twin_relationship: "Good vs Bad dynamic, fierce loyalty"
+
+# Connection to victim
+biological_father: "Reginald Ashford III (abandoned them)"
+discovery_date: "November 1926 (6 weeks before party)"
+abandonment_story: "Father paid to separate twins, erase them from his life"
+
+# Murder plan
+had_plan: "YES - with Denise, poison with laudanum"
+brought_weapon: "YES - laudanum flask in purse"
+executed_plan: "NO - couldn't go through with it"
+actual_guilt: "INNOCENT of murder, GUILTY of intent"
+
+# Visual identity
+colors: ["pale blue", "cream", "white"]
+symbols: ["swan", "twin mirrors", "pearl necklace"]
+aesthetic: "Elegant restraint, wealthy upbringing, moral conflict"
+
+# Secrets
+public_info: "Recently discovered adoption, reunited with twin"
+hidden_truth: "Discovered father's identity, planned his murder, brought poison"
+moral_conflict: "Wanted revenge but couldn't kill - too good"
+
+# Key relationships
+primary_loyalty: "Denise (twin sister)"
+primary_conflict: "Truth vs loyalty to twin"
+victim_relationship: "Biological father who abandoned her"

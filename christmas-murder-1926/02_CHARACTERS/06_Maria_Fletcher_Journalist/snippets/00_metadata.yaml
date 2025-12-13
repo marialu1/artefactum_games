@@ -1,0 +1,29 @@
+---
+character_name: "Maria Fletcher"
+player_name: "Adriana"
+role: "Investigative Journalist"
+age: 31
+status: "Innocent (Prime Suspect)"
+tier: "suspect"
+game_night: "December 24, 1926"
+
+# Character essence
+tagline: "The truth-seeker destroyed by lies"
+archetype: "Wounded Investigator"
+
+# Quick reference
+motive: "Career destroyed by Reggie in 1923 - powerful revenge motive"
+innocence: true
+key_secret: "Fantasized about Reggie's death (but didn't act on it)"
+
+# Gameplay mechanics
+special_abilities:
+  - "Interrogation Master: Can formally interview guests"
+  - "Notebook Advantage: Catch contradictions"
+  - "Detail Recall: Photographic memory for events"
+  - "Evidence Analysis: Extra detail on physical clues"
+
+# Version control
+snippet_version: "2.0"
+last_updated: "January 10, 2025"
+---
