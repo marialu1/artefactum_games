@@ -1,146 +1,112 @@
-# ACTO 2 - Documentos a Criar
+# ACTO 2 - Documentos
 
-**Status:** Testemunhos prontos, falta material de apoio
-**Puzzle:** MIGUEL (6 letras) → Abre arquivos
-
----
-
-## O que já existe
-
-```
-5 testemunhos (COMPLETOS):
-├── Rosa - abusos, 03:33
-├── Ana - vê fantasmas
-├── Matilde - viu morte acontecer
-├── Helena - pista MIGUEL
-└── Carla - sobrevivente, padrão
-```
+**Status:** COMPLETO
+**Puzzle:** MIGUEL (6 letras) → Abre arquivos do Acto 3
+**Última actualização:** 13 Dezembro 2024
 
 ---
 
-## O que falta criar
+## Documentos Criados
 
-### PRIORIDADE ALTA
+### Testemunhos (5)
 
-#### 1. Recortes de Jornal (3)
-**Propósito:** Provar o padrão de mortes + datas importantes
+| # | Ficheiro | Testemunha | Conteúdo Principal |
+|---|----------|------------|-------------------|
+| 1 | `01_testemunho_rosa.typ` | Rosa (cozinheira) | Abusos, 03:33, comida escondida |
+| 2 | `02_testemunho_ana.typ` | Ana (órfã, 15) | Vê fantasmas: Sofia, Miguel, João |
+| 3 | `03_testemunho_matilde.typ` | Matilde (órfã, 12) | VIU a morte da Conceição, desenhos |
+| 4 | `04_testemunho_helena.typ` | Helena (bibliotecária) | **PISTA: "6 letras" = MIGUEL** |
+| 5 | `05_testemunho_carla.typ` | Carla (sobrevivente) | Fugiu em 2001, viu Sofia |
 
-| Jornal | Data | Título | Conteúdo |
-|--------|------|--------|----------|
-| Jornal de Sintra | 15 Mar 1973 | "Criança morre em incêndio" | João, 8 anos, "acidente" na cozinha |
-| Correio da Manhã | 3 Out 1987 | "Menina afoga-se em cave" | Sofia, 10 anos, "acidente" |
-| Diário de Notícias | 22 Nov 2008 | "Adolescente morre em queda" | Miguel, 16 anos, "caiu das escadas" |
+### Recortes de Jornal (3)
 
-O jogador compara com testemunhos → percebe que foram ASSASSINATOS disfarçados.
+| # | Ficheiro | Ano | Vítima | Jornal |
+|---|----------|-----|--------|--------|
+| 6 | `06_recorte_jornal_1973.typ` | 1973 | João (8 anos) | Jornal de Sintra |
+| 7 | `07_recorte_jornal_1987.typ` | 1987 | Sofia (10 anos) | Correio da Manhã |
+| 8 | `08_recorte_jornal_2008.typ` | 2008 | Miguel (16 anos) | Diário de Notícias |
 
-#### 2. Desenhos da Matilde (4)
-**Propósito:** Quebrar leitura + impacto visual
+### Documentos de Apoio (1)
 
-| Desenho | Descrição | Estilo |
-|---------|-----------|--------|
-| 1 | Freira a "flutuar" acima do chão | Lápis de cera infantil |
-| 2 | Mãos/sombras a puxar de cima | Escuro, perturbador |
-| 3 | Corpo no chão, posição estranha | Simples mas claro |
-| 4 | Três figuras: molhada, fogo, alta | Sofia, João, Miguel |
+| # | Ficheiro | Descrição |
+|---|----------|-----------|
+| 9 | `09_lista_transferencias.typ` | "Transferências" falsas - os mortos |
 
-**Prompt AI base:**
+---
+
+## Estrutura Final do Compartimento A
+
+```
+📦 COMPARTIMENTO A (abre com 0333):
+
+📄 01_testemunho_rosa.pdf
+📄 02_testemunho_ana.pdf
+📄 03_testemunho_matilde.pdf
+📄 04_testemunho_helena.pdf ← PISTA "6 letras"
+📄 05_testemunho_carla.pdf
+📰 06_recorte_jornal_1973.pdf (João)
+📰 07_recorte_jornal_1987.pdf (Sofia)
+📰 08_recorte_jornal_2008.pdf (Miguel)
+📋 09_lista_transferencias.pdf
+
+🔐 Puzzle: MIGUEL → Abre Compartimento B (Acto 3)
+```
+
+---
+
+## O que falta (Opcional)
+
+### Desenhos da Matilde
+Os 4 desenhos descritos no testemunho da Matilde devem ser criados separadamente:
+1. Freira a flutuar
+2. Mãos/sombras a puxar de cima
+3. Corpo no chão
+4. Três figuras (Sofia, João, Miguel)
+
+**Prompt AI sugerido:**
 ```
 child's crayon drawing, dark theme, simple stick figures,
 creepy, on lined notebook paper, slightly smudged,
 horror atmosphere, naive art style
 ```
 
----
-
-### PRIORIDADE MÉDIA
-
-#### 3. Lista de "Transferências"
-**Propósito:** Semear dúvida + setup Acto 4
-
-```
-REGISTO DE TRANSFERÊNCIAS 1960-2024
-[documento oficial do orfanato]
-
-1973 - João Manuel Silva - "Transferido para instituição em Coimbra"
-1987 - Sofia Marques Ribeiro - "Transferida para família de acolhimento"
-2008 - Miguel António Costa - "Transferido para centro em Lisboa"
-
-[Nota manuscrita na margem: "Verificar destinos - sem confirmação"]
-```
-
-Os "transferidos" são os mortos - revelado no Acto 4.
-
-#### 4. Planta do Orfanato com Anotações
-**Propósito:** Orientação espacial + horror revelado
-
-Marcações a incluir:
-- "Cela de reflexão" (armário no corredor)
-- "Cave - PROIBIDO" (onde Sofia morreu)
-- "Sótão - castigos"
-- "Quarto do Miguel" (X)
-- "Cozinha velha" (onde João morreu)
-- Capela, lavandaria, cozinha actual (cenas do crime Acto 1)
+### Planta do Orfanato (baixa prioridade)
+Mapa com anotações de locais de castigo e mortes.
 
 ---
 
-### PRIORIDADE BAIXA
+## Pistas e Ligações
 
-#### 5. Fotografias Antigas
-**Propósito:** Atmosfera + contexto visual
+### Pista Principal (Puzzle)
+- **Helena diz:** "Seis letras. O rapaz que gostava de ler."
+- **Resposta:** MIGUEL
+- **Código para Acto 3:** MIGUEL
 
-- Foto grupo crianças anos 80 (Sofia entre elas?)
-- Foto freiras jovens anos 70
-- Foto "cela de reflexão" (armário pequeno)
-- Foto refeitório vazio
+### Ligações entre Documentos
+| Documento | Liga a |
+|-----------|--------|
+| Testemunhos Rosa/Carla | Confirmam abusos sistemáticos |
+| Testemunhos Ana/Matilde | Descrevem os 3 fantasmas |
+| Recortes de jornal | Provam as 3 mortes "acidentais" |
+| Lista de transferências | Mostra encobrimento |
 
-#### 6. Nota Anónima
-**Propósito:** Easter egg + prenúncio
+### O Padrão que o Jogador Deve Descobrir
+1. João (1973) → Incêndio → Morreu na cozinha
+2. Sofia (1987) → Afogamento → Morreu na cave
+3. Miguel (2008) → Queda → Morreu nas escadas
+4. **Todos classificados como "acidentes"**
+5. **Todos "transferidos" segundo registos oficiais**
 
-```
-[Papel amarelado, letra infantil]
+---
 
-"Elas vão pagar.
-Um dia.
-Quando formos mais fortes.
-Às 3:33, como o João disse."
+## Compilação
 
-[Sem assinatura, data ~anos 90]
+```bash
+cd /home/marilu/proj/artefactum_games/orfanato/docs/documentos_ingame/acto2
+for f in *.typ; do typst compile "$f"; done
 ```
 
 ---
 
-## Estrutura Final Acto 2
-
-```
-COMPARTIMENTO A (aberto com 0333):
-
-📄 Testemunho Rosa
-📄 Testemunho Ana
-🖼️ Desenhos da Matilde (4 folhas)
-📄 Testemunho Matilde
-📰 Recorte jornal 1973 (João)
-📰 Recorte jornal 1987 (Sofia)
-📰 Recorte jornal 2008 (Miguel)
-📄 Testemunho Helena ← PISTA MIGUEL
-📄 Testemunho Carla
-📋 Lista transferências (opcional)
-
-[Puzzle: MIGUEL → abre Compartimento B]
-```
-
----
-
-## Tempo Estimado
-
-| Item | Tempo |
-|------|-------|
-| 3 recortes jornal | 45 min |
-| Descrição 4 desenhos | 30 min |
-| Lista transferências | 15 min |
-| Planta orfanato | 30 min |
-| **TOTAL** | ~2 horas |
-
----
-
-*Criado: 8 Dezembro 2024*
-*Para criar quando retomar Acto 2*
+*Criado: 13 Dezembro 2024*
+*Status: COMPLETO*
