@@ -2,11 +2,11 @@
 
 /* === DESIGN TOKENS === */
 @theme {
-  /* Colors - Base */
-  --color-bg-deep: #0D0D0D;
-  --color-bg-surface: #1A1A1A;
-  --color-bg-elevated: #262626;
-  --color-bg-card: #1F1F1F;
+  /* Colors - Base (Preto) */
+  --color-bg-deep: #0a0a0a;
+  --color-bg-surface: #141414;
+  --color-bg-elevated: #1f1f1f;
+  --color-bg-card: #181818;
 
   /* Colors - Text */
   --color-text-primary: #F5F2E8;
@@ -21,8 +21,8 @@
   --color-accent-pink: #E91E63;
 
   /* Fonts */
-  --font-display: 'Cinzel', serif;
-  --font-body: 'Inter', sans-serif;
+  --font-display: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+  --font-body: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
 
   /* Spacing (8pt grid) */
   --spacing-xs: 0.25rem;
@@ -50,9 +50,12 @@ body {
   font-family: var(--font-body);
 }
 
-/* Headings use display font */
+/* All text uses mono font */
+h1, h2, h3, p, span, a, li, input, button {
+  font-family: var(--font-body);
+}
+
 h1, h2, h3 {
-  font-family: var(--font-display);
   font-weight: 600;
 }
 

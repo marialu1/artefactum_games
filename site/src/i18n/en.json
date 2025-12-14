@@ -13,8 +13,8 @@
   },
   "home": {
     "hero": {
-      "title": "Murder mysteries worth dying for",
-      "subtitle": "Handcrafted games for dinner parties, team events, and quiet evenings of investigation."
+      "title": "Murder tastes like Dessert",
+      "subtitle": "Handcrafted games to play with friends. Host the night, solve the crime."
     },
     "games": {
       "title": "Our Games",
@@ -46,10 +46,10 @@
       "preorder": "Pre-order",
       "notify": "Notify me"
     },
-    "customize": {
-      "title": "Want this for your event?",
-      "description": "This game can be adapted for corporate events, parties, or custom themes.",
-      "cta": "Tell us about your event"
+    "fullExperience": {
+      "title": "Want the full experience?",
+      "description": "I can organize everything — production, setup, the whole night. Design background, project management skills, obsessive attention to detail included.",
+      "cta": "Let's talk"
     }
   },
   "about": {

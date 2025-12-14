@@ -6,117 +6,337 @@ const lang = 'pt';
 ---
 
 <PageLayout>
+  <!-- Decorations -->
+  <img src="/images/decor.png" alt="" class="absolute top-0 w-48 md:w-64 opacity-80 pointer-events-none" style="right: -2rem;" />
+  <img src="/images/decor_left.png" alt="" class="fixed w-52 md:w-64 opacity-80 pointer-events-none z-10" style="left: -2rem; top: 75%; transform: translateY(-50%);" />
+  <div id="claw-scratches" class="fixed pointer-events-none z-5 overflow-hidden" style="left: -4rem; top: 5rem; width: 150px; height: 50vh;">
+    <img src="/images/claw_scratches.png" alt="" class="w-full" style="clip-path: inset(100% 0 0 0); transition: clip-path 0.1s ease-out;" id="scratch-img" />
+  </div>
+  <div id="claw-scratches-2" class="fixed pointer-events-none z-5 overflow-hidden" style="left: 6rem; top: 0; width: 150px; height: 50vh;">
+    <img src="/images/claw_scratches.png" alt="" class="w-full" style="clip-path: inset(100% 0 0 0); transition: clip-path 0.1s ease-out;" id="scratch-img-2" />
+  </div>
+
+  <!-- Blood splatters -->
+  <img src="/images/splatter_lg1.png" alt="" class="absolute opacity-50 pointer-events-none" style="top: 8%; right: 5%; width: 180px; transform: rotate(25deg);" />
+  <img src="/images/splatter_sm1.png" alt="" class="absolute opacity-60 pointer-events-none" style="top: 15%; left: 8%; width: 80px; transform: rotate(-15deg);" />
+  <img src="/images/splatter_sm2.png" alt="" class="absolute opacity-30 pointer-events-none" style="top: 22%; left: 40%; width: 60px; transform: rotate(70deg);" />
+  <img src="/images/splatter_md2.png" alt="" class="absolute opacity-40 pointer-events-none" style="top: 35%; right: 3%; width: 140px; transform: rotate(180deg);" />
+  <img src="/images/splatter_md1.png" alt="" class="absolute opacity-25 pointer-events-none" style="top: 40%; left: 50%; width: 100px; transform: rotate(-45deg);" />
+  <img src="/images/splatter_sm2.png" alt="" class="absolute opacity-55 pointer-events-none" style="top: 45%; left: 2%; width: 70px; transform: rotate(45deg);" />
+  <img src="/images/splatter_sm3.png" alt="" class="absolute opacity-35 pointer-events-none" style="top: 52%; left: 35%; width: 50px; transform: rotate(200deg);" />
+  <img src="/images/splatter_md1.png" alt="" class="absolute opacity-45 pointer-events-none" style="top: 55%; right: 8%; width: 120px; transform: rotate(-30deg);" />
+  <img src="/images/splatter_sm1.png" alt="" class="absolute opacity-30 pointer-events-none" style="top: 62%; left: 55%; width: 65px; transform: rotate(130deg);" />
+  <img src="/images/splatter_sm3.png" alt="" class="absolute opacity-50 pointer-events-none" style="top: 65%; left: 5%; width: 90px; transform: rotate(90deg);" />
+  <img src="/images/splatter_md3.png" alt="" class="absolute opacity-25 pointer-events-none" style="top: 72%; left: 45%; width: 85px; transform: rotate(-80deg);" />
+  <img src="/images/splatter_lg2.png" alt="" class="absolute opacity-35 pointer-events-none" style="top: 75%; right: 2%; width: 160px; transform: rotate(-60deg);" />
+  <img src="/images/splatter_md3.png" alt="" class="absolute opacity-45 pointer-events-none" style="top: 85%; left: 3%; width: 110px; transform: rotate(120deg);" />
+  <img src="/images/splatter_sm1.png" alt="" class="absolute opacity-30 pointer-events-none" style="top: 90%; left: 48%; width: 55px; transform: rotate(15deg);" />
+
   <!-- Hero -->
-  <section class="max-w-4xl mx-auto px-4 py-16 md:py-24 text-center">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl font-display mb-6 leading-tight">
+  <section class="max-w-5xl mx-auto px-4 py-16 md:py-24 text-center">
+    <h1 class="text-6xl md:text-7xl lg:text-8xl mb-8 leading-tight font-normal" style="font-family: 'Cherish', cursive; color: #8B0000; letter-spacing: 0.05em; font-weight: 400;">
       {t(lang, 'home.hero.title')}
     </h1>
-    <p class="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto">
+    <p class="text-lg md:text-xl text-text-secondary">
       {t(lang, 'home.hero.subtitle')}
     </p>
   </section>
 
+  <hr class="max-w-xs mx-auto border-t border-[#8B0000]/30 my-8" />
+
   <!-- Games Section -->
-  <section class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-display mb-8 text-center">
+  <section class="max-w-6xl mx-auto px-4 py-16 pl-32 md:pl-40">
+    <h2 class="text-5xl md:text-6xl mb-12 text-center" style="font-family: 'Cherish', cursive; color: #8B0000; font-weight: 400;">
       {t(lang, 'home.games.title')}
     </h2>
 
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Christmas Murder 1926 -->
-      <article class="bg-bg-card rounded-lg overflow-hidden border border-bg-elevated hover:border-accent-gold/50 transition-colors group">
-        <div class="aspect-video bg-bg-elevated flex items-center justify-center text-text-muted">
-          <span class="text-sm">Hero image: christmas-murder-1926</span>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-display mb-2 group-hover:text-accent-gold transition-colors">
-            Christmas Murder 1926
-          </h3>
-          <p class="text-text-secondary text-sm mb-4">
-            Um jantar de mistério da era Gatsby para 11 jogadores.
-            Um convidado é assassinado na véspera de Natal. Quem o fez?
-          </p>
-          <div class="flex items-center gap-4 text-xs text-text-muted mb-4">
-            <span>11 {t(lang, 'games.players')}</span>
-            <span>5-6h</span>
-            <span>PT</span>
+    <div class="space-y-12">
+      <!-- Assassinato em Gatsby Rose -->
+      <article class="vintage-envelope relative p-8 md:p-12 shadow-2xl" style="background: linear-gradient(135deg, #f5f0e1 0%, #e8e0c8 50%, #d4c9a8 100%); border: none; box-shadow: inset 0 0 80px rgba(139, 69, 19, 0.15), 0 10px 40px rgba(0,0,0,0.3); transform: rotate(-0.5deg);">
+
+        <!-- Paper texture overlay -->
+        <div class="absolute inset-0 opacity-30 pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=&quot;0 0 200 200&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cfilter id=&quot;noise&quot;%3E%3CfeTurbulence type=&quot;fractalNoise&quot; baseFrequency=&quot;0.85&quot; numOctaves=&quot;4&quot; stitchTiles=&quot;stitch&quot;/%3E%3C/filter%3E%3Crect width=&quot;100%25&quot; height=&quot;100%25&quot; filter=&quot;url(%23noise)&quot;/%3E%3C/svg%3E');"></div>
+
+        <!-- Coffee stain -->
+        <div class="absolute opacity-20 rounded-full pointer-events-none" style="width: 120px; height: 100px; bottom: 15%; right: 10%; background: radial-gradient(ellipse, #8B4513 0%, transparent 70%); transform: rotate(20deg);"></div>
+
+        <!-- Age spots -->
+        <div class="absolute opacity-15 rounded-full pointer-events-none" style="width: 40px; height: 40px; top: 30%; left: 5%; background: radial-gradient(circle, #a08060 0%, transparent 70%);"></div>
+        <div class="absolute opacity-10 rounded-full pointer-events-none" style="width: 25px; height: 25px; top: 60%; left: 15%; background: radial-gradient(circle, #a08060 0%, transparent 70%);"></div>
+
+        <!-- Fold line -->
+        <div class="absolute left-0 right-0 pointer-events-none" style="top: 50%; height: 2px; background: linear-gradient(90deg, transparent 0%, rgba(139, 69, 19, 0.1) 20%, rgba(139, 69, 19, 0.15) 50%, rgba(139, 69, 19, 0.1) 80%, transparent 100%);"></div>
+
+        <!-- Airmail stripes top - diagonal -->
+        <div class="absolute top-0 left-0 right-0 h-5 overflow-hidden">
+          <div class="flex h-full" style="transform: skewX(-45deg); margin-left: -20px;">
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
           </div>
-          <div class="flex items-center justify-between">
-            <span class="text-accent-gold font-display">24 Dez</span>
-            <a href="/pt/jogos/christmas-murder-1926" class="text-sm text-text-secondary hover:text-text-primary">
-              Saber mais →
-            </a>
+        </div>
+        <!-- Airmail stripes bottom - diagonal -->
+        <div class="absolute bottom-0 left-0 right-0 h-5 overflow-hidden">
+          <div class="flex h-full" style="transform: skewX(-45deg); margin-left: -20px;">
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
           </div>
         </div>
+
+        <!-- Stamp with perforated edges -->
+        <div class="absolute top-8 right-8 rotate-6" style="filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));">
+          <div class="relative w-20 h-24 flex items-center justify-center" style="background: linear-gradient(145deg, #c41e3a 0%, #8B0000 100%); clip-path: polygon(4% 0%, 8% 4%, 12% 0%, 16% 4%, 20% 0%, 24% 4%, 28% 0%, 32% 4%, 36% 0%, 40% 4%, 44% 0%, 48% 4%, 52% 0%, 56% 4%, 60% 0%, 64% 4%, 68% 0%, 72% 4%, 76% 0%, 80% 4%, 84% 0%, 88% 4%, 92% 0%, 96% 4%, 100% 0%, 100% 4%, 96% 8%, 100% 12%, 96% 16%, 100% 20%, 96% 24%, 100% 28%, 96% 32%, 100% 36%, 96% 40%, 100% 44%, 96% 48%, 100% 52%, 96% 56%, 100% 60%, 96% 64%, 100% 68%, 96% 72%, 100% 76%, 96% 80%, 100% 84%, 96% 88%, 100% 92%, 96% 96%, 100% 100%, 96% 100%, 92% 96%, 88% 100%, 84% 96%, 80% 100%, 76% 96%, 72% 100%, 68% 96%, 64% 100%, 60% 96%, 56% 100%, 52% 96%, 48% 100%, 44% 96%, 40% 100%, 36% 96%, 32% 100%, 28% 96%, 24% 100%, 20% 96%, 16% 100%, 12% 96%, 8% 100%, 4% 96%, 0% 100%, 0% 96%, 4% 92%, 0% 88%, 4% 84%, 0% 80%, 4% 76%, 0% 72%, 4% 68%, 0% 64%, 4% 60%, 0% 56%, 4% 52%, 0% 48%, 4% 44%, 0% 40%, 4% 36%, 0% 32%, 4% 28%, 0% 24%, 4% 20%, 0% 16%, 4% 12%, 0% 8%, 4% 4%);">
+            <span class="text-[#f5f0e1] text-xs font-bold text-center leading-tight">24<br/>DEZ<br/>1926</span>
+          </div>
+        </div>
+
+        <!-- Postal mark / cancellation -->
+        <div class="absolute top-10 right-32 opacity-70" style="transform: rotate(-20deg);">
+          <div class="w-16 h-16 rounded-full border-2 border-[#333] flex items-center justify-center relative">
+            <div class="absolute inset-1 rounded-full border border-[#333]"></div>
+            <span class="text-[#333] text-[7px] text-center font-bold leading-tight">MANHATTAN<br/>N.Y.<br/>1926</span>
+          </div>
+          <!-- Cancellation lines -->
+          <div class="absolute top-1/2 -left-4 w-24 h-0.5 bg-[#333] opacity-60" style="transform: translateY(-50%);"></div>
+          <div class="absolute top-1/2 -left-4 w-24 h-0.5 bg-[#333] opacity-60" style="transform: translateY(-50%) translateY(-4px);"></div>
+          <div class="absolute top-1/2 -left-4 w-24 h-0.5 bg-[#333] opacity-60" style="transform: translateY(-50%) translateY(4px);"></div>
+        </div>
+
+        <!-- Wax seal -->
+        <div class="absolute bottom-16 right-12" style="filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.4));">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background: radial-gradient(circle at 30% 30%, #c41e3a 0%, #8B0000 50%, #5c0000 100%);">
+            <span class="text-[#f5f0e1] text-lg font-bold" style="font-family: 'Cherish', cursive;">A</span>
+          </div>
+        </div>
+
+        <div class="mt-8 mb-6">
+          <a href="/pt/jogos/christmas-murder-1926" class="block">
+            <h3 class="text-5xl md:text-7xl mb-3" style="font-family: 'Cherish', cursive; color: #8B0000; font-weight: 400;">
+              Assassinato em Gatsby Rose
+            </h3>
+          </a>
+          <p class="text-sm uppercase tracking-widest" style="color: #5c4a32;">Manhattan, 1926</p>
+        </div>
+
+        <p class="mb-5 italic text-lg" style="color: #3d3225;">
+          O jazz é alto, o champanhe corre, e os segredos são mortais.
+        </p>
+        <p class="mb-8 text-base leading-relaxed" style="color: #5c4a32;">
+          Onze convidados chegam à lendária Mansão Gatsby Rose para uma soirée de véspera de Natal.
+          A anfitriã prometeu uma noite inesquecível. Antes da meia-noite, um convidado jaz morto.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm mb-6 pt-6" style="border-top: 1px dashed #8B4513; color: #5c4a32;">
+          <span>11 jogadores</span>
+          <span>•</span>
+          <span>5-6 horas</span>
+          <span>•</span>
+          <span>Formato jantar</span>
+        </div>
+
+        <a href="/pt/jogos/christmas-murder-1926" class="inline-block text-sm hover:underline" style="color: #8B0000;">
+          Abrir convite →
+        </a>
       </article>
 
       <!-- Orfanato -->
-      <article class="bg-bg-card rounded-lg overflow-hidden border border-bg-elevated hover:border-accent-gold/50 transition-colors group">
-        <div class="aspect-video bg-bg-elevated flex items-center justify-center text-text-muted">
-          <span class="text-sm">Hero image: orfanato</span>
+      <article class="vintage-envelope relative p-8 md:p-12 shadow-2xl" style="background: linear-gradient(135deg, #f5f0e1 0%, #e8e0c8 50%, #d4c9a8 100%); border: none; box-shadow: inset 0 0 80px rgba(139, 69, 19, 0.15), 0 10px 40px rgba(0,0,0,0.3); transform: rotate(0.5deg);">
+
+        <!-- Paper texture overlay -->
+        <div class="absolute inset-0 opacity-30 pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=&quot;0 0 200 200&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cfilter id=&quot;noise&quot;%3E%3CfeTurbulence type=&quot;fractalNoise&quot; baseFrequency=&quot;0.85&quot; numOctaves=&quot;4&quot; stitchTiles=&quot;stitch&quot;/%3E%3C/filter%3E%3Crect width=&quot;100%25&quot; height=&quot;100%25&quot; filter=&quot;url(%23noise)&quot;/%3E%3C/svg%3E');"></div>
+
+        <!-- Coffee stain -->
+        <div class="absolute opacity-15 rounded-full pointer-events-none" style="width: 90px; height: 80px; top: 20%; left: 8%; background: radial-gradient(ellipse, #8B4513 0%, transparent 70%); transform: rotate(-10deg);"></div>
+
+        <!-- Age spots -->
+        <div class="absolute opacity-12 rounded-full pointer-events-none" style="width: 35px; height: 35px; bottom: 25%; right: 20%; background: radial-gradient(circle, #a08060 0%, transparent 70%);"></div>
+        <div class="absolute opacity-10 rounded-full pointer-events-none" style="width: 20px; height: 20px; top: 45%; right: 5%; background: radial-gradient(circle, #a08060 0%, transparent 70%);"></div>
+
+        <!-- Fold line -->
+        <div class="absolute left-0 right-0 pointer-events-none" style="top: 45%; height: 2px; background: linear-gradient(90deg, transparent 0%, rgba(139, 69, 19, 0.1) 20%, rgba(139, 69, 19, 0.15) 50%, rgba(139, 69, 19, 0.1) 80%, transparent 100%);"></div>
+
+        <!-- Airmail stripes top - diagonal -->
+        <div class="absolute top-0 left-0 right-0 h-5 overflow-hidden">
+          <div class="flex h-full" style="transform: skewX(-45deg); margin-left: -20px;">
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+          </div>
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-display mb-2 group-hover:text-accent-gold transition-colors">
-            Orfanato Nossa Senhora das Dores
-          </h3>
-          <p class="text-text-secondary text-sm mb-4">
-            Um mistério de assassínio sobrenatural num orfanato português.
-            Três freiras mortas às 3:33. As mortes são impossíveis. A verdade é pior.
-          </p>
-          <div class="flex items-center gap-4 text-xs text-text-muted mb-4">
-            <span>1-4 {t(lang, 'games.players')}</span>
-            <span>2-3h</span>
-            <span>PT</span>
+        <!-- Airmail stripes bottom - diagonal -->
+        <div class="absolute bottom-0 left-0 right-0 h-5 overflow-hidden">
+          <div class="flex h-full" style="transform: skewX(-45deg); margin-left: -20px;">
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#1e3a5f]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
+            <div class="w-8 bg-[#c41e3a]"></div>
+            <div class="w-8 bg-[#f5f0e1]"></div>
           </div>
-          <div class="flex items-center justify-between">
-            <span class="text-text-muted text-sm">{t(lang, 'games.status.coming_soon')}</span>
-            <a href="/pt/jogos/orfanato" class="text-sm text-text-secondary hover:text-text-primary">
-              Saber mais →
-            </a>
+        </div>
+
+        <!-- Stamp with perforated edges -->
+        <div class="absolute top-8 right-8 -rotate-3" style="filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));">
+          <div class="relative w-20 h-24 flex items-center justify-center" style="background: linear-gradient(145deg, #1e3a5f 0%, #0d1f33 100%); clip-path: polygon(4% 0%, 8% 4%, 12% 0%, 16% 4%, 20% 0%, 24% 4%, 28% 0%, 32% 4%, 36% 0%, 40% 4%, 44% 0%, 48% 4%, 52% 0%, 56% 4%, 60% 0%, 64% 4%, 68% 0%, 72% 4%, 76% 0%, 80% 4%, 84% 0%, 88% 4%, 92% 0%, 96% 4%, 100% 0%, 100% 4%, 96% 8%, 100% 12%, 96% 16%, 100% 20%, 96% 24%, 100% 28%, 96% 32%, 100% 36%, 96% 40%, 100% 44%, 96% 48%, 100% 52%, 96% 56%, 100% 60%, 96% 64%, 100% 68%, 96% 72%, 100% 76%, 96% 80%, 100% 84%, 96% 88%, 100% 92%, 96% 96%, 100% 100%, 96% 100%, 92% 96%, 88% 100%, 84% 96%, 80% 100%, 76% 96%, 72% 100%, 68% 96%, 64% 100%, 60% 96%, 56% 100%, 52% 96%, 48% 100%, 44% 96%, 40% 100%, 36% 96%, 32% 100%, 28% 96%, 24% 100%, 20% 96%, 16% 100%, 12% 96%, 8% 100%, 4% 96%, 0% 100%, 0% 96%, 4% 92%, 0% 88%, 4% 84%, 0% 80%, 4% 76%, 0% 72%, 4% 68%, 0% 64%, 4% 60%, 0% 56%, 4% 52%, 0% 48%, 4% 44%, 0% 40%, 4% 36%, 0% 32%, 4% 28%, 0% 24%, 4% 20%, 0% 16%, 4% 12%, 0% 8%, 4% 4%);">
+            <span class="text-[#f5f0e1] text-xs font-bold text-center leading-tight">13<br/>DEZ<br/>1985</span>
           </div>
+        </div>
+
+        <!-- Postal mark / cancellation -->
+        <div class="absolute top-10 right-32 opacity-70" style="transform: rotate(15deg);">
+          <div class="w-16 h-16 rounded-full border-2 border-[#333] flex items-center justify-center relative">
+            <div class="absolute inset-1 rounded-full border border-[#333]"></div>
+            <span class="text-[#333] text-[7px] text-center font-bold leading-tight">PORTUGAL<br/>CTT<br/>1985</span>
+          </div>
+          <!-- Cancellation lines -->
+          <div class="absolute top-1/2 -left-4 w-24 h-0.5 bg-[#333] opacity-60" style="transform: translateY(-50%);"></div>
+          <div class="absolute top-1/2 -left-4 w-24 h-0.5 bg-[#333] opacity-60" style="transform: translateY(-50%) translateY(-4px);"></div>
+          <div class="absolute top-1/2 -left-4 w-24 h-0.5 bg-[#333] opacity-60" style="transform: translateY(-50%) translateY(4px);"></div>
+        </div>
+
+        <!-- Wax seal -->
+        <div class="absolute bottom-16 right-12" style="filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.4));">
+          <div class="w-14 h-14 rounded-full flex items-center justify-center" style="background: radial-gradient(circle at 30% 30%, #1e3a5f 0%, #0d1f33 50%, #060d15 100%);">
+            <span class="text-[#f5f0e1] text-lg font-bold" style="font-family: 'Cherish', cursive;">A</span>
+          </div>
+        </div>
+
+        <div class="mt-8 mb-6">
+          <a href="/pt/jogos/orfanato" class="block">
+            <h3 class="text-5xl md:text-7xl mb-3" style="font-family: 'Cherish', cursive; color: #8B0000; font-weight: 400;">
+              Orfanato Nossa Senhora das Dores
+            </h3>
+          </a>
+          <p class="text-sm uppercase tracking-widest" style="color: #5c4a32;">Portugal, 1985</p>
+        </div>
+
+        <p class="mb-5 italic text-lg" style="color: #3d3225;">
+          Algumas mortes são impossíveis. Algumas verdades são piores.
+        </p>
+        <p class="mb-8 text-base leading-relaxed" style="color: #5c4a32;">
+          13 de Dezembro de 1985. Três freiras encontradas mortas num orfanato português.
+          As três morreram exactamente às 3:33. As três em quartos diferentes. As três... impossíveis.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm mb-6 pt-6" style="border-top: 1px dashed #8B4513; color: #5c4a32;">
+          <span>1-4 jogadores</span>
+          <span>•</span>
+          <span>2-3 horas</span>
+          <span>•</span>
+          <span>Caixa física + app</span>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <span class="text-xs px-2 py-1 rounded" style="background: #8B4513; color: #f5f0e1;">{t(lang, 'games.status.coming_soon')}</span>
+          <a href="/pt/jogos/orfanato" class="inline-block text-sm hover:underline" style="color: #8B0000;">
+            Saber mais →
+          </a>
         </div>
       </article>
     </div>
   </section>
 
-  <!-- Custom Game CTA -->
-  <section class="max-w-4xl mx-auto px-4 py-16">
-    <div class="bg-bg-surface rounded-lg p-8 md:p-12 text-center border border-bg-elevated">
-      <h2 class="text-2xl md:text-3xl font-display mb-4">
-        {t(lang, 'home.custom.title')}
-      </h2>
-      <p class="text-text-secondary mb-6 max-w-xl mx-auto">
-        {t(lang, 'home.custom.description')}
-      </p>
-      <a
-        href="/pt/personalizar"
-        class="inline-block bg-accent-gold text-bg-deep px-6 py-3 rounded font-medium hover:bg-accent-gold-hover transition-colors"
-      >
-        {t(lang, 'home.custom.cta')}
-      </a>
+  <!-- About Artefactum -->
+  <section class="max-w-6xl mx-auto px-4 py-20 pl-32 md:pl-48">
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+      <div class="flex-1">
+        <h2 class="text-5xl md:text-6xl mb-8" style="font-family: 'Cherish', cursive; color: #8B0000; font-weight: 400;">Sobre o Artefactum</h2>
+        <p class="text-lg text-text-secondary mb-6">Somos criadores de experiências imersivas de mistério. Cada jogo é uma história cuidadosamente escrita, com personagens complexas, pistas escondidas e reviravoltas que te vão deixar sem fôlego.</p>
+        <p class="text-text-secondary mb-6">Desde jantares de mistério para grupos de amigos até eventos corporativos únicos, damos vida a histórias onde tu és o protagonista. Porque os melhores mistérios são aqueles que vives na pele.</p>
+        <p class="text-text-secondary">Também criamos jogos totalmente personalizados à tua medida. Tens uma ideia? <a href="/pt/contacto" class="text-accent-gold hover:text-accent-gold-hover">Fala connosco</a> e vamos dar vida à tua história.</p>
+      </div>
+      <div class="flex-shrink-0">
+        <img src="/images/about_decor.png" alt="" class="w-36 md:w-48 opacity-90" />
+      </div>
     </div>
   </section>
 
   <!-- Newsletter -->
-  <section class="max-w-4xl mx-auto px-4 py-16">
+  <section class="max-w-5xl mx-auto px-4 py-16">
     <div class="text-center">
-      <h2 class="text-xl font-display mb-2">
+      <h2 class="text-4xl md:text-5xl mb-6" style="font-family: 'Cherish', cursive; color: #8B0000; font-weight: 400;">
         {t(lang, 'home.newsletter.title')}
       </h2>
-      <p class="text-text-secondary text-sm mb-6">
+      <p class="text-text-secondary mb-8">
         {t(lang, 'home.newsletter.description')}
       </p>
-      <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
         <input
           type="email"
           name="email"
           placeholder={t(lang, 'home.newsletter.placeholder')}
           required
-          class="flex-1 px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none text-sm"
+          class="flex-1 px-4 py-3 bg-bg-surface border border-bg-elevated rounded focus:border-accent-gold focus:outline-none"
         />
         <button
           type="submit"
-          class="px-6 py-3 bg-accent-gold text-bg-deep rounded font-medium hover:bg-accent-gold-hover transition-colors text-sm"
+          class="px-6 py-3 bg-accent-gold text-bg-deep rounded font-medium hover:bg-accent-gold-hover transition-colors"
         >
           {t(lang, 'home.newsletter.cta')}
         </button>
@@ -124,3 +344,31 @@ const lang = 'pt';
     </div>
   </section>
 </PageLayout>
+
+<script>
+  // Claw scratch effect on scroll
+  const scratchImg = document.getElementById('scratch-img');
+  const scratchImg2 = document.getElementById('scratch-img-2');
+
+  function updateScratches() {
+    const scrollY = window.scrollY;
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+    // Start showing scratches immediately, complete at end of page
+    let revealPercent = 0;
+    if (scrollY > 0) {
+      revealPercent = Math.min(100, 5 + (scrollY / maxScroll) * 95);
+    }
+    const clipValue = 100 - revealPercent;
+
+    if (scratchImg) {
+      scratchImg.style.clipPath = `inset(${clipValue}% 0 0 0)`;
+    }
+    if (scratchImg2) {
+      scratchImg2.style.clipPath = `inset(${clipValue}% 0 0 0)`;
+    }
+  }
+
+  window.addEventListener('scroll', updateScratches);
+  updateScratches();
+</script>

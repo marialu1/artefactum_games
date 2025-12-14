@@ -13,8 +13,8 @@
   },
   "home": {
     "hero": {
-      "title": "Mistérios de assassínio que valem a pena morrer",
-      "subtitle": "Jogos artesanais para jantares, eventos de equipa, e noites tranquilas de investigação."
+      "title": "A vingança é um prato que se serve frio",
+      "subtitle": "Jogos artesanais para jogar com amigos. Organiza a noite, resolve o crime."
     },
     "games": {
       "title": "Os Nossos Jogos",
@@ -46,10 +46,10 @@
       "preorder": "Pré-encomendar",
       "notify": "Avisar-me"
     },
-    "customize": {
-      "title": "Queres isto para o teu evento?",
-      "description": "Este jogo pode ser adaptado para eventos corporativos, festas, ou temas personalizados.",
-      "cta": "Fala-nos do teu evento"
+    "fullExperience": {
+      "title": "Queres a experiência completa?",
+      "description": "Posso organizar tudo — produção, montagem, a noite toda. Background em design, skills de gestão de projecto, atenção obsessiva ao detalhe incluídos.",
+      "cta": "Vamos falar"
     }
   },
   "about": {

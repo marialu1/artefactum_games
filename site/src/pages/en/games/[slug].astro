@@ -19,7 +19,7 @@ const { Content } = await game.render();
 
 <PageLayout title={game.data.title} description={game.data.description}>
   <!-- Hero -->
-  <section class="max-w-4xl mx-auto px-4 pt-16 pb-8">
+  <section class="max-w-5xl mx-auto px-4 pt-16 pb-8">
     <div class="text-center mb-8">
       <p class="text-accent-gold text-sm mb-2 tracking-wide uppercase">
         {game.data.type.replace('-', ' ')}
@@ -27,7 +27,7 @@ const { Content } = await game.render();
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-display mb-4">
         {game.data.title}
       </h1>
-      <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+      <p class="text-xl text-text-secondary">
         {game.data.tagline}
       </p>
     </div>
@@ -79,7 +79,7 @@ const { Content } = await game.render();
   )}
 
   <!-- Content -->
-  <section class="max-w-3xl mx-auto px-4 py-8">
+  <section class="max-w-5xl mx-auto px-4 py-8">
     <article class="prose prose-invert prose-gold max-w-none">
       <Content />
     </article>
@@ -99,20 +99,20 @@ const { Content } = await game.render();
     </section>
   )}
 
-  <!-- Customize CTA -->
-  <section class="max-w-4xl mx-auto px-4 py-16">
+  <!-- Full Experience CTA -->
+  <section class="max-w-5xl mx-auto px-4 py-16">
     <div class="bg-bg-surface rounded-lg p-8 md:p-12 text-center border border-bg-elevated">
       <h2 class="text-2xl font-display mb-4">
-        {t(lang, 'games.customize.title')}
+        {t(lang, 'games.fullExperience.title')}
       </h2>
-      <p class="text-text-secondary mb-6 max-w-xl mx-auto">
-        {t(lang, 'games.customize.description')}
+      <p class="text-text-secondary mb-6">
+        {t(lang, 'games.fullExperience.description')}
       </p>
       <a
         href="/en/contact"
         class="inline-block bg-bg-elevated text-text-primary px-6 py-3 rounded font-medium hover:bg-bg-card transition-colors border border-bg-elevated hover:border-accent-gold/50"
       >
-        {t(lang, 'games.customize.cta')}
+        {t(lang, 'games.fullExperience.cta')}
       </a>
     </div>
   </section>

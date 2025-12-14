@@ -12,21 +12,10 @@ export type Lang = keyof typeof languages;
 
 const translations = { en, pt } as const;
 
-type NestedKeyOf<T> = T extends object
-  ? { [K in keyof T]: K extends string
-      ? T[K] extends object
-        ? `${K}.${NestedKeyOf<T[K]>}`
-        : K
-      : never
-    }[keyof T]
-  : never;
-
-type TranslationKey = NestedKeyOf<typeof en>;
-
 /**
  * Get translation for a key
  */
-export function t(lang: Lang, key: TranslationKey): string {
+export function t(lang: Lang, key: string): string {
   const keys = key.split('.');
   let value: unknown = translations[lang];
 

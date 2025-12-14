@@ -5,87 +5,81 @@ const lang = getLangFromUrl(Astro.url);
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="fixed top-0 left-0 right-0 z-50 bg-bg-deep/90 backdrop-blur-sm border-b border-bg-elevated">
-  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    <!-- Logo -->
-    <a href={getRoute(lang, 'home')} class="font-display text-xl tracking-wide hover:text-accent-gold transition-colors">
-      Artefactum
-    </a>
+<header class="bg-transparent relative">
+  <!-- Language Switcher - top right -->
+  <div class="absolute top-4 right-4 flex items-center gap-2 text-sm">
+    {Object.entries(languages).map(([code, name]) => (
+      <a
+        href={getTranslatedPath(currentPath, code as keyof typeof languages)}
+        class:list={[
+          'px-2 py-1 rounded transition-colors',
+          lang === code
+            ? 'text-text-primary'
+            : 'text-text-muted hover:text-text-secondary'
+        ]}
+      >
+        {code.toUpperCase()}
+      </a>
+    ))}
+  </div>
 
-    <!-- Navigation -->
-    <ul class="hidden md:flex items-center gap-8 text-sm">
-      <li>
-        <a href={getRoute(lang, 'games')} class="text-text-secondary hover:text-text-primary transition-colors">
-          {t(lang, 'nav.games')}
-        </a>
-      </li>
-      <li>
-        <a href={getRoute(lang, 'about')} class="text-text-secondary hover:text-text-primary transition-colors">
-          {t(lang, 'nav.about')}
-        </a>
-      </li>
-      <li>
-        <a href={getRoute(lang, 'contact')} class="text-text-secondary hover:text-text-primary transition-colors">
-          {t(lang, 'nav.contact')}
-        </a>
-      </li>
-      <li>
-        <a href={getRoute(lang, 'custom')} class="text-accent-gold hover:text-accent-gold-hover transition-colors">
-          {t(lang, 'nav.custom')}
-        </a>
-      </li>
-    </ul>
-
-    <!-- Language Switcher -->
-    <div class="flex items-center gap-2 text-sm">
-      {Object.entries(languages).map(([code, name]) => (
-        <a
-          href={getTranslatedPath(currentPath, code as keyof typeof languages)}
-          class:list={[
-            'px-2 py-1 rounded transition-colors',
-            lang === code
-              ? 'bg-bg-elevated text-text-primary'
-              : 'text-text-muted hover:text-text-secondary'
-          ]}
-        >
-          {code.toUpperCase()}
-        </a>
-      ))}
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <!-- Logo central -->
+    <div class="text-center mb-6">
+      <a href={getRoute(lang, 'home')} class="text-6xl md:text-8xl tracking-normal hover:opacity-80 transition-opacity" style="font-family: 'Cherish', cursive; color: #8B0000;">
+        Artefactum
+      </a>
     </div>
 
-    <!-- Mobile menu button -->
-    <button
-      id="mobile-menu-btn"
-      class="md:hidden p-2 text-text-secondary hover:text-text-primary"
-      aria-label="Menu"
-    >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-  </nav>
+    <!-- Navigation central -->
+    <nav class="flex justify-center">
+      <ul class="hidden md:flex items-center gap-8 text-sm tracking-wide">
+        <li>
+          <a href={getRoute(lang, 'games')} class="hover:opacity-80 transition-opacity" style="color: #8B0000;">
+            {t(lang, 'nav.games')}
+          </a>
+        </li>
+        <li>
+          <a href={getRoute(lang, 'custom')} class="hover:opacity-80 transition-opacity" style="color: #8B0000;">
+            {t(lang, 'nav.custom')}
+          </a>
+        </li>
+        <li>
+          <a href={getRoute(lang, 'about')} class="hover:opacity-80 transition-opacity" style="color: #8B0000;">
+            {t(lang, 'nav.about')}
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile menu button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2 text-text-secondary hover:text-text-primary"
+        aria-label="Menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+  </div>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-bg-surface border-t border-bg-elevated">
-    <ul class="px-4 py-4 space-y-4">
+  <div id="mobile-menu" class="hidden md:hidden bg-bg-surface/50 backdrop-blur-sm">
+    <ul class="px-4 py-4 space-y-4 text-center">
       <li>
-        <a href={getRoute(lang, 'games')} class="block text-text-secondary hover:text-text-primary">
+        <a href={getRoute(lang, 'games')} class="block hover:opacity-80" style="color: #8B0000;">
           {t(lang, 'nav.games')}
         </a>
       </li>
       <li>
-        <a href={getRoute(lang, 'about')} class="block text-text-secondary hover:text-text-primary">
-          {t(lang, 'nav.about')}
-        </a>
-      </li>
-      <li>
-        <a href={getRoute(lang, 'contact')} class="block text-text-secondary hover:text-text-primary">
-          {t(lang, 'nav.contact')}
-        </a>
-      </li>
-      <li>
-        <a href={getRoute(lang, 'custom')} class="block text-accent-gold">
+        <a href={getRoute(lang, 'custom')} class="block hover:opacity-80" style="color: #8B0000;">
           {t(lang, 'nav.custom')}
+        </a>
+      </li>
+      <li>
+        <a href={getRoute(lang, 'about')} class="block hover:opacity-80" style="color: #8B0000;">
+          {t(lang, 'nav.about')}
         </a>
       </li>
     </ul>
